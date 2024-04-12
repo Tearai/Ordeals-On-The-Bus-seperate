@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8059340116007730068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PeanutButterJelly
+  m_EditorClassIdentifier: 
+  Path: event:/PeanutButterJelly
+  Guid:
+    Data1: 2134867689
+    Data2: 1332931769
+    Data3: 872105907
+    Data4: -1734923014
+  Banks:
+  - {fileID: 2700541493429642394}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130344
+--- !u!114 &-6946845832915909199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BusAI
+  m_EditorClassIdentifier: 
+  Path: event:/BusAI
+  Guid:
+    Data1: -954373483
+    Data2: 1214141666
+    Data3: 1396580746
+    Data4: -855554869
+  Banks:
+  - {fileID: 2700541493429642394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3579636383332447431}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18019
+--- !u!114 &-3579636383332447431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BusAI/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 3
+  ID:
+    data1: 1319936241
+    data2: 354406501
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Left
+  - Right
+  - Docking
+  - Main
+  Exists: 1
+--- !u!114 &-1660293229430627248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Passengers/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 672760506
+    data2: 1508575705
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Hello
+  - Ticket
+  - Goodbye
+  - Reset
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 3123715651733477682}
+  - {fileID: 2700541493429642394}
+  - {fileID: 8565048902427954819}
+  EditorEvents:
+  - {fileID: -6946845832915909199}
+  - {fileID: 2511789379430161724}
+  - {fileID: 7830303234585977131}
+  - {fileID: -8059340116007730068}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 2700541493429642394}
+  StringsBanks:
+  - {fileID: 3123715651733477682}
+  cacheTime: 638485415384739174
+  cacheVersion: 131616
+--- !u!114 &2511789379430161724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passengers
+  m_EditorClassIdentifier: 
+  Path: event:/Passengers
+  Guid:
+    Data1: -1737318465
+    Data2: 1077842146
+    Data3: -709459543
+    Data4: 221039697
+  Banks:
+  - {fileID: 8565048902427954819}
+  - {fileID: 2700541493429642394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1660293229430627248}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17800
+--- !u!114 &2700541493429642394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638485415384729044
+  FileSizes:
+  - Name: Desktop
+    Value: 1322240
+  Exists: 1
+--- !u!114 &3123715651733477682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638485415384739174
+  FileSizes:
+  - Name: Desktop
+    Value: 1110
+  Exists: 1
+--- !u!114 &7830303234585977131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RandomNPC
+  m_EditorClassIdentifier: 
+  Path: event:/RandomNPC
+  Guid:
+    Data1: 996015931
+    Data2: 1101114064
+    Data3: 230637756
+    Data4: -379617773
+  Banks:
+  - {fileID: 2700541493429642394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8037
+--- !u!114 &8565048902427954819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Passenger Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger Bank.bank
+  Name: Passenger Bank
+  StudioPath: bank:/Passenger Bank
+  lastModified: 638470841838141171
+  FileSizes:
+  - Name: Desktop
+    Value: 106688
+  Exists: 1

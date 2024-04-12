@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.ordealsonthebus.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\Amaze\\Documents\\GitHub\\Ordeals_On_The_Bus\\Ordeals on the Bus\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Ordeals on the Bus [Testing]"
+        }
+      }
+    }
+  ]
+}
