@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scene/Level 1.unity
     guid: 198bdacc5c51c254eaf28edf01e94011
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Scene/Outro.unity
     guid: 9e74f344d596ec147a7042c143bf991a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Robert.unity
     guid: 3d118a5c44d4c5e42be52a244e2ff548
   m_configObjects:
