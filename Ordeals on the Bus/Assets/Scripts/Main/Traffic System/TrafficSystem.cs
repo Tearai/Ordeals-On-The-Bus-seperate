@@ -44,6 +44,7 @@ public class TrafficSystem : MonoBehaviour
         if(other.gameObject.CompareTag("Splat"))
         {
             splat.canShow = true;
+            
         }
     }
 
@@ -57,14 +58,10 @@ public class TrafficSystem : MonoBehaviour
 
         if (other.gameObject.CompareTag("Splat"))
         {
+
+            splat.colliderEnterCount = 0;
             splat.canShow = false;
-            splat.leverTrue = false;
-            splat.leverSecond = false;
-            splat.leverThird = false;
-            splat.leverFourth = false;
-            splat.leverFifth = false;
-            splat.leverSixth = false;
-            splat.leverStart = false;
+
         }
     }
 }

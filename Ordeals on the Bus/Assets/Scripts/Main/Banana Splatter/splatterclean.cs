@@ -15,18 +15,17 @@ public class splatterclean : MonoBehaviour
     public float fadeDuration = 1f;
 
     public XRLever lever;
-    public bool leverTrue;
-    public bool leverSecond;
-    public bool leverThird;
-    public bool leverFourth;
-    public bool leverFifth;
-    public bool leverSixth;
-    public bool leverStart;
 
     public GameObject Wiper;
     public Animator wiperAnimator;
     public string wipeAnimation;
+    public string wipeAnimation2;
     public bool playonce;
+
+
+    public bool[] boolArray = new bool[5];
+
+    public int colliderEnterCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -72,19 +71,20 @@ public class splatterclean : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cleaned1)
+        if (boolArray[0] && cleaning == false)
         {
             StartCoroutine(FadeMaterialAlpha(0.8f, fadeDuration));
         }
 
-        if (cleaned2)
+        if (boolArray[1] && cleaning == false)
         {
             StartCoroutine(FadeMaterialAlpha(0.4f, fadeDuration));
         }
 
-        if (cleaned3)
+        if (boolArray[2] && cleaning == false)
         {
             StartCoroutine(FadeMaterialAlpha(0, fadeDuration));
+            cleaning = true;
         }
 
         if (canShow == true)
@@ -93,69 +93,36 @@ public class splatterclean : MonoBehaviour
             cleaning = false;
         }
 
-        // Check if lever is activated and set cleaned variables accordingly
-        if (leverTrue == true)
-        {
-            cleaned1 = true;
-        }
-
-        if (leverThird == true)
-        {
-            cleaned2 = true;
-        }
-
-        if(leverFifth == true)
-        {
-            cleaned3 = true;
-        }
-
-
-
-        if(lever.value == true && leverStart == false && cleaning == false)
-        {
-            leverTrue = true;
-            leverStart = true;
-        }
-
-        if(lever.value == false && leverTrue == true)
-        {
-            leverSecond = true;
-            leverTrue = false;
-        }
-
-        if (lever.value == true && leverSecond == true)
-        {
-            leverThird = true;
-            leverSecond = false;
-        }
-
-        if (lever.value == false && leverThird == true)
-        {
-            leverFourth = true;
-            leverThird = false;
-        }
-
-        if (lever.value == true && leverFourth == true)
-        {
-            leverFifth = true;
-            leverFourth = false;
-        }
-
-        if (lever.value == false  && leverFifth == true)
-        {
-            leverSixth = true;
-            leverFifth = false;
-        }
-
-        if(lever.value == true && playonce == false)
+        if (lever.value == true)
         {
             wiperAnimator.Play(wipeAnimation);
             playonce = true;
         }
 
-        if(lever.value == false)
+        if (lever.value == false && playonce == true)
         {
-            playonce = false;
+            wiperAnimator.Play(wipeAnimation2);
         }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Washer"))
+        {
+            colliderEnterCount++;
+
+            // Activate the corresponding bool
+            if (colliderEnterCount <= boolArray.Length)
+            {
+                boolArray[colliderEnterCount - 1] = true;
+                StartCoroutine(DeactivateBoolAfterDelay(colliderEnterCount - 1, 1f)); // Change the duration as needed
+            }
+        }
+    }
+
+    IEnumerator DeactivateBoolAfterDelay(int index, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        boolArray[index] = false;
     }
 }
