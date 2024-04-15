@@ -45,8 +45,9 @@ public class npcmovement : MonoBehaviour
     public Rigidbody[] _ragdollRigidbodies;
 
     [Header("FMOD")]
-    public EventReference firstDialogue;
+    public GameObject firstDialogue;
     public bool Dialogue1;
+    public GameObject SecondDialogue;
 
     void Start()
     {
@@ -138,7 +139,7 @@ public class npcmovement : MonoBehaviour
             //sound
             if(Dialogue1 == false)
             {
-                RuntimeManager.PlayOneShot(firstDialogue, transform.position);
+                firstDialogue.SetActive(true);
                 Dialogue1 = true;
             }
             
@@ -147,6 +148,7 @@ public class npcmovement : MonoBehaviour
         if (other.CompareTag("Hand"))
         {
             ragdoll();
+            firstDialogue.SetActive(false);
 
             foreach (var rigidbody in _ragdollRigidbodies)
             {
@@ -281,8 +283,8 @@ public class npcmovement : MonoBehaviour
 
         NPC1Animations.enabled = false;
         navMeshAgent.isStopped = true;
-        
 
+        SecondDialogue.SetActive(true);
         StartCoroutine(RestorePositionAndRotation(savedPosition, savedRotation));
     }
 
@@ -315,6 +317,7 @@ public class npcmovement : MonoBehaviour
 
         yield return new WaitForSeconds(2.5f);
         navMeshAgent.isStopped = false;
+        SecondDialogue.SetActive(false);
         foreach (var rigidbody in _ragdollRigidbodies)
         {
             rigidbody.isKinematic = true;
