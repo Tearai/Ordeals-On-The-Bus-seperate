@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{65cc5afe-2201-42e4-95fa-deec6ccf7e5d}">
 		<property name="assetPath">
-			<value>Peanut Butter Jelly Time with Lyrics!!!.mp3</value>
+			<value>Useless/Peanut Butter Jelly Time with Lyrics!!!.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

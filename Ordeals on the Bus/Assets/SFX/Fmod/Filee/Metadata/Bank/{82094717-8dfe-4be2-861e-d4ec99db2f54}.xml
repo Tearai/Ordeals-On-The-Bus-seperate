@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{82094717-8dfe-4be2-861e-d4ec99db2f54}">
+		<property name="name">
+			<value>Pop up Ads</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fec09363-08a5-42b2-8391-11ab9237e483}</destination>
+		</relationship>
+	</object>
+</objects>

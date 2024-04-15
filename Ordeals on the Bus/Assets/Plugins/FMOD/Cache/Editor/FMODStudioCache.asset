@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8544768457217633090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638488077342419506
+  FileSizes:
+  - Name: Desktop
+    Value: 330528
+  Exists: 1
 --- !u!114 &-8059340116007730068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +47,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 130344
+--- !u!114 &-6974550213845292481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pop Up Ads
+  m_EditorClassIdentifier: 
+  Path: event:/Pop Up Ads
+  Guid:
+    Data1: 991474330
+    Data2: 1316244268
+    Data3: 917132935
+    Data4: -1684145266
+  Banks:
+  - {fileID: -5226735772566452484}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6946845832915909199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,6 +102,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18019
+--- !u!114 &-5226735772566452484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Pop up Ads.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Pop up Ads.bank
+  Name: Pop up Ads
+  StudioPath: bank:/Pop up Ads
+  lastModified: 638488075625566890
+  FileSizes:
+  - Name: Desktop
+    Value: 7840
+  Exists: 1
 --- !u!114 &-3579636383332447431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +150,53 @@ MonoBehaviour:
   - Docking
   - Main
   Exists: 1
+--- !u!114 &-2857524118293191574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Phone SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Phone SFX.bank
+  Name: Phone SFX
+  StudioPath: bank:/Phone SFX
+  lastModified: 638488068288308769
+  FileSizes:
+  - Name: Desktop
+    Value: 1045984
+  Exists: 1
+--- !u!114 &-2577406822596550717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 1 dialogue 1
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 1 dialogue 1
+  Guid:
+    Data1: -1963271374
+    Data2: 1276149116
+    Data3: -2141973357
+    Data4: 363939538
+  Banks:
+  - {fileID: -1207280998003165891}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1660293229430627248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +225,26 @@ MonoBehaviour:
   - Goodbye
   - Reset
   Exists: 1
+--- !u!114 &-1207280998003165891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Passenger 1.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger 1.bank
+  Name: Passenger 1
+  StudioPath: bank:/Passenger 1
+  lastModified: 638488090508498975
+  FileSizes:
+  - Name: Desktop
+    Value: 1045984
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,18 +261,53 @@ MonoBehaviour:
   - {fileID: 3123715651733477682}
   - {fileID: 2700541493429642394}
   - {fileID: 8565048902427954819}
+  - {fileID: -2857524118293191574}
+  - {fileID: -5226735772566452484}
+  - {fileID: -8544768457217633090}
+  - {fileID: -1207280998003165891}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 2511789379430161724}
   - {fileID: 7830303234585977131}
   - {fileID: -8059340116007730068}
+  - {fileID: 1762766685649486540}
+  - {fileID: -6974550213845292481}
+  - {fileID: 3203025809737642737}
+  - {fileID: -2577406822596550717}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638485415384739174
+  cacheTime: 638488090508498975
   cacheVersion: 131616
+--- !u!114 &1762766685649486540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Phone
+  m_EditorClassIdentifier: 
+  Path: event:/Phone
+  Guid:
+    Data1: -315322057
+    Data2: 1300960740
+    Data3: -495025484
+    Data4: 703101909
+  Banks:
+  - {fileID: -2857524118293191574}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2511789379430161724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +352,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638485415384729044
+  lastModified: 638488079297364604
   FileSizes:
   - Name: Desktop
     Value: 1322240
@@ -203,11 +372,38 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638485415384739174
+  lastModified: 638488079297374642
   FileSizes:
   - Name: Desktop
-    Value: 1110
+    Value: 1462
   Exists: 1
+--- !u!114 &3203025809737642737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/City Ambience 1
+  m_EditorClassIdentifier: 
+  Path: event:/City Ambience 1
+  Guid:
+    Data1: 48251270
+    Data2: 1279245688
+    Data3: -1136097862
+    Data4: -1986828602
+  Banks:
+  - {fileID: -8544768457217633090}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7830303234585977131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +446,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger Bank.bank
   Name: Passenger Bank
   StudioPath: bank:/Passenger Bank
-  lastModified: 638470841838141171
+  lastModified: 638488066380015041
   FileSizes:
   - Name: Desktop
     Value: 106688

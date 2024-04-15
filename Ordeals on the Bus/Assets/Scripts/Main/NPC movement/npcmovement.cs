@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using FMODUnity;
 
 public class npcmovement : MonoBehaviour
 {
@@ -42,6 +43,10 @@ public class npcmovement : MonoBehaviour
     public string getup;
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
+
+    [Header("FMOD")]
+    public EventReference firstDialogue;
+    public bool Dialogue1;
 
     void Start()
     {
@@ -129,6 +134,14 @@ public class npcmovement : MonoBehaviour
             ticket.enabled = true;
             transform.LookAt(Player.transform);
             NPC1Animations.SetBool("isHand", true);
+
+            //sound
+            if(Dialogue1 == false)
+            {
+                RuntimeManager.PlayOneShot(firstDialogue, transform.position);
+                Dialogue1 = true;
+            }
+            
         }
 
         if (other.CompareTag("Hand"))
@@ -139,6 +152,8 @@ public class npcmovement : MonoBehaviour
             {
                 rigidbody.isKinematic = false;
             }
+
+  
         }
     }
 
