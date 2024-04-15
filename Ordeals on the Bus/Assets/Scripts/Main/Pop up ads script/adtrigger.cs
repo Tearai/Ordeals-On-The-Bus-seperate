@@ -8,6 +8,8 @@ public class adtrigger : MonoBehaviour
 
     private bool triggered = false;
 
+    public float time;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!triggered && other.gameObject.CompareTag("Player"))
@@ -25,7 +27,7 @@ public class adtrigger : MonoBehaviour
         foreach (GameObject ad in ads)
         {
             ad.SetActive(true);
-            yield return new WaitForSeconds(0.5f); 
+            yield return new WaitForSeconds(time); 
         }
     }
 

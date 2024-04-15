@@ -38,6 +38,19 @@ TagManager:
   - Third NPC
   - First NPC
   - Traffic
+  - Docking
+  - Hello
+  - DockSfx
+  - Splat
+  - Bus
+  - End
+  - GorillaSpawn
+  - Grab
+  - Ticket
+  - Obstacle
+  - Fifth NPC
+  - Boss
+  - stationary
   layers:
   - Default
   - TransparentFX
@@ -47,7 +60,7 @@ TagManager:
   - UI
   - Hands
   - Interactive
-  - 
+  - Phone
   - 
   - 
   - 
