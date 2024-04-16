@@ -26,6 +26,9 @@ public class NPC6 : MonoBehaviour
     public bool run;
     public string LeaveAreaName;
 
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -67,6 +70,7 @@ public class NPC6 : MonoBehaviour
         if (other.CompareTag("Finish"))
         {
             transform.LookAt(Player.transform);
+            firstDialogue.SetActive(true);
         }
 
         if (other.CompareTag("End"))

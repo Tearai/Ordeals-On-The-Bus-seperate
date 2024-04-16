@@ -197,6 +197,7 @@ public class NPC4 : MonoBehaviour
                 childObject.transform.SetParent(parentObject.transform);
 
                 Dialogue4 = true;
+                ThirdDialogue.SetActive(false);
             }
         }
     }
