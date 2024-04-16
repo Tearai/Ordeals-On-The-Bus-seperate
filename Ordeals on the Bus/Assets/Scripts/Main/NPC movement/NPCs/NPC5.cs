@@ -42,6 +42,14 @@ public class NPC5 : MonoBehaviour
     public ParticleSystem smoke;
     public bool canSmoke;
 
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+    public bool Dialogue1;
+    public GameObject ThirdDialogue;
+    public bool Dialogue3;
+    public GameObject FourthDialogue;
+    public bool Dialogue4;
+
 
     void Start()
     {
@@ -100,8 +108,15 @@ public class NPC5 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+
+            Dialogue3 = true;
         }
 
+        if (Dialogue3 == true)
+        {
+            ThirdDialogue.SetActive(true);
+            firstDialogue.SetActive(false);
+        }
 
         if (gotoseat == true && vip.isonFire == false)
         {
@@ -120,13 +135,15 @@ public class NPC5 : MonoBehaviour
         {
             var main = smoke.main;
             main.loop = false;
+            FourthDialogue.SetActive(false);
         }
-        
-        if(smoking == true)
+
+        if (smoking == true)
         {
             var main = smoke.main;
             main.loop = true;
             smoke.Play();
+            FourthDialogue.SetActive(true);
 
         }
         
@@ -138,6 +155,12 @@ public class NPC5 : MonoBehaviour
         {
             transform.LookAt(Player.transform);
             ticket.enabled = true;
+
+            if (Dialogue1 == false)
+            {
+                firstDialogue.SetActive(true);
+                Dialogue1 = true;
+            }
         }
     }
 
@@ -172,6 +195,8 @@ public class NPC5 : MonoBehaviour
                 childObject.transform.SetParent(parentObject.transform);
                 smokingVFX.SetActive(true);
                 smokingVFX.transform.parent = null;
+
+                ThirdDialogue.SetActive(false);
             }
         }
     }
