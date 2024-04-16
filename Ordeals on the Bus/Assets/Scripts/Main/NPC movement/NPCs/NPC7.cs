@@ -27,6 +27,9 @@ public class NPC7 : MonoBehaviour
     public float WaitTime;
     public npcmovement npc;
 
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -63,6 +66,7 @@ public class NPC7 : MonoBehaviour
         {
             transform.LookAt(Player.transform);
             StartCoroutine(Running());
+            firstDialogue.SetActive(true);
         }
 
         if(other.CompareTag("End"))

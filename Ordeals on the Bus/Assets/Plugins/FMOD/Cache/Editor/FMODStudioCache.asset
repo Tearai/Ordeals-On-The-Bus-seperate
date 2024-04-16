@@ -190,7 +190,7 @@ MonoBehaviour:
     Data4: 363939538
   Banks:
   - {fileID: -1207280998003165891}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
@@ -240,10 +240,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger 1.bank
   Name: Passenger 1
   StudioPath: bank:/Passenger 1
-  lastModified: 638488090508498975
+  lastModified: 638488627612164777
   FileSizes:
   - Name: Desktop
-    Value: 1045984
+    Value: 7840
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638488090508498975
+  cacheTime: 638488644310898258
   cacheVersion: 131616
 --- !u!114 &1762766685649486540
 MonoBehaviour:
@@ -352,7 +352,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638488079297364604
+  lastModified: 638488644310893193
   FileSizes:
   - Name: Desktop
     Value: 1322240
@@ -372,7 +372,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638488079297374642
+  lastModified: 638488644310898258
   FileSizes:
   - Name: Desktop
     Value: 1462

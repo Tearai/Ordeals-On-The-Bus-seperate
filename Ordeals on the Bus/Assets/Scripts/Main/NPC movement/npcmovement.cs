@@ -44,10 +44,12 @@ public class npcmovement : MonoBehaviour
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
 
-    [Header("FMOD")]
+    [Header("Dialogue")]
     public GameObject firstDialogue;
     public bool Dialogue1;
     public GameObject SecondDialogue;
+    public GameObject ThirdDialogue;
+    public bool Dialogue3;
 
     void Start()
     {
@@ -113,6 +115,14 @@ public class npcmovement : MonoBehaviour
             NPC1Animations.SetBool("isIdle", false);
             NPC1Animations.SetBool("isHand", false);
 
+            Dialogue3 = true;
+
+        }
+
+        if(Dialogue3 == true)
+        {
+            ThirdDialogue.SetActive(true);
+            firstDialogue.SetActive(false);
         }
 
         if (gotoseat == true && vip.isonFire == false)
@@ -196,7 +206,7 @@ public class npcmovement : MonoBehaviour
                 NPC1Animations.SetBool("isWalk", false);
                 NPC1Animations.SetBool("isIdle", false);
                 childObject.transform.SetParent(parentObject.transform);
-
+                ThirdDialogue.SetActive(false);
 
 
                 // Optional: You can disable the NavMeshAgent once the NPC reaches the seat
