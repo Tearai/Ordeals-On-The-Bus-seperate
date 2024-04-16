@@ -35,6 +35,13 @@ public class NPC2 : MonoBehaviour
     [Header("Animations")]
     public string leavingdestination;
     public bool canleave;
+
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+    public bool Dialogue1;
+    public GameObject ThirdDialogue;
+    public bool Dialogue3;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -93,6 +100,13 @@ public class NPC2 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+            Dialogue3 = true;
+        }
+
+        if (Dialogue3 == true)
+        {
+            ThirdDialogue.SetActive(true);
+            firstDialogue.SetActive(false);
         }
 
 
@@ -115,6 +129,12 @@ public class NPC2 : MonoBehaviour
         {
             ticket.enabled = true;
             transform.LookAt(Player.transform);
+
+            if (Dialogue1 == false)
+            {
+                firstDialogue.SetActive(true);
+                Dialogue1 = true;
+            }
         }
     }
 
@@ -148,7 +168,7 @@ public class NPC2 : MonoBehaviour
                 NPC1Animations.SetBool("isIdle", false);
                 childObject.transform.SetParent(parentObject.transform);
 
-
+                ThirdDialogue.SetActive(false);
             }
         }
     }

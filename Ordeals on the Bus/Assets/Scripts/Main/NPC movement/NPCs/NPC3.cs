@@ -49,6 +49,14 @@ public class NPC3 : MonoBehaviour
 
     private float startTime;
 
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+    public bool Dialogue1;
+    public GameObject ThirdDialogue;
+    public bool Dialogue3;
+    public GameObject FourthDialogue;
+    public GameObject FifthDialogue;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -108,8 +116,15 @@ public class NPC3 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+
+            Dialogue3 = true;
         }
 
+        if (Dialogue3 == true)
+        {
+            ThirdDialogue.SetActive(true);
+            firstDialogue.SetActive(false);
+        }
 
         if (gotoseat == true && vip.isonFire == false)
         {
@@ -136,13 +151,21 @@ public class NPC3 : MonoBehaviour
         {
             smelly.SetActive(false);
             StartCoroutine(ChangeColorOverTime());
+            FourthDialogue.SetActive(false);
+            FifthDialogue.SetActive(true);
 
         }
 
-        if(other.CompareTag("Finish"))
+        if (other.CompareTag("Finish"))
         {
             ticket.enabled = true;
             transform.LookAt(Player.transform);
+
+            if (Dialogue1 == false)
+            {
+                firstDialogue.SetActive(true);
+                Dialogue1 = true;
+            }
         }
     }
 
@@ -175,7 +198,8 @@ public class NPC3 : MonoBehaviour
                 NPC1Animations.SetBool("isIdle", false);
                 childObject.transform.SetParent(parentObject.transform);
 
-
+                ThirdDialogue.SetActive(false);
+                FourthDialogue.SetActive(true);
             }
         }
     }
@@ -247,6 +271,8 @@ public class NPC3 : MonoBehaviour
         yield return new WaitForSeconds(10f);
         colorchange = true;
 
+        FourthDialogue.SetActive(false);
+        FifthDialogue.SetActive(false);
     }
 
     private IEnumerator ChangeBackColorOverTime()
@@ -265,8 +291,12 @@ public class NPC3 : MonoBehaviour
         }
 
         material.color = startColor;
-        
+
         smelly.SetActive(true);
         colorchange = false;
+
+        yield return new WaitForSeconds(0.5f);
+
+        FourthDialogue.SetActive(true);
     }
 }
