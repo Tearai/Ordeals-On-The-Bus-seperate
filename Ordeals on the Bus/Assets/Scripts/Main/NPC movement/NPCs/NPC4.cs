@@ -40,6 +40,14 @@ public class NPC4 : MonoBehaviour
     public bool canleave;
     public bool canDriveOff;
 
+    [Header("Dialogue")]
+    public GameObject firstDialogue;
+    public bool Dialogue1;
+    public GameObject ThirdDialogue;
+    public bool Dialogue3;
+    public GameObject FourthDialogue;
+    public bool Dialogue4;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -97,6 +105,13 @@ public class NPC4 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+            Dialogue3 = true;
+        }
+
+        if (Dialogue3 == true)
+        {
+            ThirdDialogue.SetActive(true);
+            firstDialogue.SetActive(false);
         }
 
 
@@ -124,6 +139,15 @@ public class NPC4 : MonoBehaviour
             ticket.enabled = false;
         }
         
+        if(Dialogue4 == true && showticket == true)
+        {
+            FourthDialogue.SetActive(true);
+        }
+
+        if(Dialogue4 == true && showticket == false)
+        {
+            FourthDialogue.SetActive(false);
+        }
 
     }
 
@@ -133,7 +157,12 @@ public class NPC4 : MonoBehaviour
         {
             transform.LookAt(Player.transform);
             canShow = true;
-            
+
+            if (Dialogue1 == false)
+            {
+                firstDialogue.SetActive(true);
+                Dialogue1 = true;
+            }
         }
     }
 
@@ -167,7 +196,7 @@ public class NPC4 : MonoBehaviour
                 NPC1Animations.SetBool("isIdle", false);
                 childObject.transform.SetParent(parentObject.transform);
 
-
+                Dialogue4 = true;
             }
         }
     }
