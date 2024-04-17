@@ -15,38 +15,11 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638488077342419506
+  lastModified: 638489791442862264
   FileSizes:
   - Name: Desktop
-    Value: 330528
+    Value: 4262592
   Exists: 1
---- !u!114 &-8059340116007730068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PeanutButterJelly
-  m_EditorClassIdentifier: 
-  Path: event:/PeanutButterJelly
-  Guid:
-    Data1: 2134867689
-    Data2: 1332931769
-    Data3: 872105907
-    Data4: -1734923014
-  Banks:
-  - {fileID: 2700541493429642394}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 130344
 --- !u!114 &-6974550213845292481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +95,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7840
   Exists: 1
+--- !u!114 &-3679760329407770255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Car Crash SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Car Crash SFX
+  Guid:
+    Data1: -1094385181
+    Data2: 1105564340
+    Data3: -129763159
+    Data4: 227824580
+  Banks:
+  - {fileID: 8914909151291644343}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3579636383332447431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Phone SFX.bank
   Name: Phone SFX
   StudioPath: bank:/Phone SFX
-  lastModified: 638488068288308769
+  lastModified: 638489749424326253
   FileSizes:
   - Name: Desktop
     Value: 1045984
@@ -197,34 +197,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-1660293229430627248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Passengers/Parameter 1
-  m_EditorClassIdentifier: 
-  Name: Parameter 1
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 672760506
-    data2: 1508575705
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Hello
-  - Ticket
-  - Goodbye
-  - Reset
-  Exists: 1
 --- !u!114 &-1207280998003165891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +217,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7840
   Exists: 1
+--- !u!114 &-732000826500496629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Car SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Car SFX
+  Guid:
+    Data1: 1573842846
+    Data2: 1274615422
+    Data3: 1866612404
+    Data4: 1846595497
+  Banks:
+  - {fileID: 8914909151291644343}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60216
+--- !u!114 &-356770359895632236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/City Ambience 2
+  m_EditorClassIdentifier: 
+  Path: event:/City Ambience 2
+  Guid:
+    Data1: -1331691379
+    Data2: 1227941089
+    Data3: 345677224
+    Data4: 1718260858
+  Banks:
+  - {fileID: -8544768457217633090}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 299232
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,26 +286,26 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 3123715651733477682}
   - {fileID: 2700541493429642394}
-  - {fileID: 8565048902427954819}
   - {fileID: -2857524118293191574}
   - {fileID: -5226735772566452484}
   - {fileID: -8544768457217633090}
   - {fileID: -1207280998003165891}
+  - {fileID: 8914909151291644343}
   EditorEvents:
   - {fileID: -6946845832915909199}
-  - {fileID: 2511789379430161724}
-  - {fileID: 7830303234585977131}
-  - {fileID: -8059340116007730068}
   - {fileID: 1762766685649486540}
   - {fileID: -6974550213845292481}
   - {fileID: 3203025809737642737}
   - {fileID: -2577406822596550717}
+  - {fileID: -732000826500496629}
+  - {fileID: -3679760329407770255}
+  - {fileID: -356770359895632236}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638488644310898258
+  cacheTime: 638489791442909684
   cacheVersion: 131616
 --- !u!114 &1762766685649486540
 MonoBehaviour:
@@ -308,35 +334,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2511789379430161724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Passengers
-  m_EditorClassIdentifier: 
-  Path: event:/Passengers
-  Guid:
-    Data1: -1737318465
-    Data2: 1077842146
-    Data3: -709459543
-    Data4: 221039697
-  Banks:
-  - {fileID: 8565048902427954819}
-  - {fileID: 2700541493429642394}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1660293229430627248}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 17800
 --- !u!114 &2700541493429642394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,10 +349,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638488644310893193
+  lastModified: 638489791442909684
   FileSizes:
   - Name: Desktop
-    Value: 1322240
+    Value: 3322
   Exists: 1
 --- !u!114 &3123715651733477682
 MonoBehaviour:
@@ -372,10 +369,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638488644310898258
+  lastModified: 638489791442909684
   FileSizes:
   - Name: Desktop
-    Value: 1462
+    Value: 1374
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
@@ -399,39 +396,12 @@ MonoBehaviour:
   - {fileID: -8544768457217633090}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &7830303234585977131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/RandomNPC
-  m_EditorClassIdentifier: 
-  Path: event:/RandomNPC
-  Guid:
-    Data1: 996015931
-    Data2: 1101114064
-    Data3: 230637756
-    Data4: -379617773
-  Banks:
-  - {fileID: 2700541493429642394}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8037
---- !u!114 &8565048902427954819
+  Length: 40724
+--- !u!114 &8914909151291644343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,13 +411,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Passenger Bank.bank
+  m_Name: bank:/Car SFXs.bank
   m_EditorClassIdentifier: 
-  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger Bank.bank
-  Name: Passenger Bank
-  StudioPath: bank:/Passenger Bank
-  lastModified: 638488066380015041
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Car SFXs.bank
+  Name: Car SFXs
+  StudioPath: bank:/Car SFXs
+  lastModified: 638489767935551015
   FileSizes:
   - Name: Desktop
-    Value: 106688
+    Value: 648576
   Exists: 1

@@ -479,8 +479,8 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
+  - Car SFXs
   - Passenger 1
-  - Passenger Bank
   - Phone SFX
   - Pop up Ads
   BanksToLoad: []
