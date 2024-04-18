@@ -19,6 +19,7 @@ public class Gorilla : MonoBehaviour
     [Header("Grabbing")]
     public GameObject Hand;
     public int collisionCount = 0;
+    private bool isGrabbing = false;
 
     [Header("Going Back")]
     public string goBackLocation;
@@ -29,6 +30,11 @@ public class Gorilla : MonoBehaviour
 
     [Header("Animations")]
     public Animator gorillaAnimator;
+
+    [Header("SFX")]
+    public GameObject breakBusSFX;
+    public GameObject swingSFX;
+    public GameObject eatSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -61,32 +67,53 @@ public class Gorilla : MonoBehaviour
         if(breakOnce == true)
         {
             Destroy(BusBack);
+            breakBusSFX.SetActive(true);
         }
     }
 
     IEnumerator GrabbingBanana()
     {
+        print("started");
         Transform npcTransform = npc[currentNPCIndex].transform;
         npcTransform.SetParent(Hand.transform);
         npcTransform.localPosition = Vector3.zero;
         npc[currentNPCIndex].transform.SetParent(Hand.transform);
         yield return new WaitForSeconds(2f);
         Destroy(npc[currentNPCIndex]);
+        eatSFX.SetActive(true);
+        navMeshAgent.isStopped = true;
         yield return new WaitForSeconds(2f);
+        navMeshAgent.isStopped = false;
+        eatSFX.SetActive(false);
         currentNPCIndex++;
+        isGrabbing = false;
+        yield return null;
+    }
+
+    IEnumerator swingSFXs()
+    {
+        swingSFX.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        swingSFX.SetActive(false);
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Grab"))
         {
-            collisionCount++;
+            if (collisionCount < 2)
+            {
+                collisionCount++;
+            }
+                
             Grab = true;
             breakOnce = true;
             gorillaAnimator.SetBool("Swiping", true);
-            if(collisionCount >=2)
+            StartCoroutine(swingSFXs());
+            if (collisionCount >=2 && !isGrabbing)
             {
                 StartCoroutine(GrabbingBanana());
+                isGrabbing = true;
             }
         }
 

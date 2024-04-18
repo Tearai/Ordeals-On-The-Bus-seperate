@@ -75,6 +75,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18019
+--- !u!114 &-6413264201645862251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Gorilla SFXs.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Gorilla SFXs.bank
+  Name: Gorilla SFXs
+  StudioPath: bank:/Gorilla SFXs
+  lastModified: 638490571309328600
+  FileSizes:
+  - Name: Desktop
+    Value: 153408
+  Exists: 1
 --- !u!114 &-5226735772566452484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +311,7 @@ MonoBehaviour:
   - {fileID: -8544768457217633090}
   - {fileID: -1207280998003165891}
   - {fileID: 8914909151291644343}
+  - {fileID: -6413264201645862251}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
@@ -300,12 +321,15 @@ MonoBehaviour:
   - {fileID: -732000826500496629}
   - {fileID: -3679760329407770255}
   - {fileID: -356770359895632236}
+  - {fileID: 2324219444108415316}
+  - {fileID: 1853842978891479349}
+  - {fileID: 6617225937642860549}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638489791442909684
+  cacheTime: 638490571309328600
   cacheVersion: 131616
 --- !u!114 &1762766685649486540
 MonoBehaviour:
@@ -334,6 +358,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1853842978891479349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gorilla Swing
+  m_EditorClassIdentifier: 
+  Path: event:/Gorilla Swing
+  Guid:
+    Data1: 631508527
+    Data2: 1309523184
+    Data3: 829938867
+    Data4: -1395281918
+  Banks:
+  - {fileID: -6413264201645862251}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2324219444108415316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gorilla Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Gorilla Footsteps
+  Guid:
+    Data1: 1494487394
+    Data2: 1216118307
+    Data3: -1260929904
+    Data4: -1009951589
+  Banks:
+  - {fileID: -6413264201645862251}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7800
 --- !u!114 &2700541493429642394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +427,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638489791442909684
+  lastModified: 638490571308847555
   FileSizes:
   - Name: Desktop
     Value: 3322
@@ -369,10 +447,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638489791442909684
+  lastModified: 638490571308865820
   FileSizes:
   - Name: Desktop
-    Value: 1374
+    Value: 1546
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
@@ -401,6 +479,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 40724
+--- !u!114 &6617225937642860549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gorilla Eat
+  m_EditorClassIdentifier: 
+  Path: event:/Gorilla Eat
+  Guid:
+    Data1: -853770227
+    Data2: 1248902925
+    Data3: -1361707645
+    Data4: 1852202858
+  Banks:
+  - {fileID: -6413264201645862251}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8914909151291644343
 MonoBehaviour:
   m_ObjectHideFlags: 0

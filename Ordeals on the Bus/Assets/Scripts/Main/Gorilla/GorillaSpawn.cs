@@ -10,13 +10,15 @@ public class GorillaSpawn : MonoBehaviour
     public GameObject VFX;
     public bool move;
 
-    public float dropTime;
     public float fallForce = 10.0f;
     public bool canDrop;
 
     public BoxCollider box;
 
     public gorillaland land;
+
+    public GameObject crashLandSFX;
+    public GameObject gorillaStepSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class GorillaSpawn : MonoBehaviour
         if (canDrop == true)
         {
             StartCoroutine(crashDown());
+            crashLandSFX.SetActive(true);
         }
 
     }
@@ -60,7 +63,7 @@ public class GorillaSpawn : MonoBehaviour
 
     IEnumerator crashDown()
     {
-        yield return new WaitForSeconds(dropTime);
+        
         Gorilla gorillaComponent = gorilla.GetComponent<Gorilla>();
         gorillaComponent.enabled = true;
         gorilla.GetComponent<Animator>().enabled = true;
@@ -71,6 +74,8 @@ public class GorillaSpawn : MonoBehaviour
         gorillaRb.useGravity = false;
         gorillaRb.isKinematic = true;
         box.enabled = false;
+        gorillaStepSFX.SetActive(true);
+        yield return null;
     }
 
     void FixedUpdate()
