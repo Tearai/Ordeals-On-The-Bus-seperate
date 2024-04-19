@@ -46,6 +46,7 @@ public class NPC3 : MonoBehaviour
     public float duration = 2f;
     public bool colorchange;
     public bool canGeton;
+    public bool cleaning;
 
     private float startTime;
 
@@ -150,7 +151,12 @@ public class NPC3 : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             smelly.SetActive(false);
-            StartCoroutine(ChangeColorOverTime());
+
+            if (cleaning == false)
+            {
+                StartCoroutine(ChangeColorOverTime());
+            }
+            
             FourthDialogue.SetActive(false);
             FifthDialogue.SetActive(true);
 
@@ -254,6 +260,7 @@ public class NPC3 : MonoBehaviour
     //color change
     private IEnumerator ChangeColorOverTime()
     {
+        cleaning = true;
         canGeton = true;
         float elapsedTime = 0f;
 
@@ -297,6 +304,7 @@ public class NPC3 : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
+        cleaning = false;
         FourthDialogue.SetActive(true);
     }
 }
