@@ -115,6 +115,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7840
   Exists: 1
+--- !u!114 &-4453390150516811431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Grab SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Grab SFX
+  Guid:
+    Data1: -1569725263
+    Data2: 1244870428
+    Data3: -747018324
+    Data4: 605060490
+  Banks:
+  - {fileID: 9004854474642674256}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3679760329407770255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +339,7 @@ MonoBehaviour:
   - {fileID: -1207280998003165891}
   - {fileID: 8914909151291644343}
   - {fileID: -6413264201645862251}
+  - {fileID: 9004854474642674256}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
@@ -324,12 +352,13 @@ MonoBehaviour:
   - {fileID: 2324219444108415316}
   - {fileID: 1853842978891479349}
   - {fileID: 6617225937642860549}
+  - {fileID: -4453390150516811431}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638490571309328600
+  cacheTime: 638491623504146855
   cacheVersion: 131616
 --- !u!114 &1762766685649486540
 MonoBehaviour:
@@ -427,7 +456,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638490571308847555
+  lastModified: 638491623503528435
   FileSizes:
   - Name: Desktop
     Value: 3322
@@ -447,10 +476,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638490571308865820
+  lastModified: 638491623503538515
   FileSizes:
   - Name: Desktop
-    Value: 1546
+    Value: 1648
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
@@ -525,4 +554,24 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 648576
+  Exists: 1
+--- !u!114 &9004854474642674256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Grab SFXs.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Grab SFXs.bank
+  Name: Grab SFXs
+  StudioPath: bank:/Grab SFXs
+  lastModified: 638491623504146855
+  FileSizes:
+  - Name: Desktop
+    Value: 7328
   Exists: 1
