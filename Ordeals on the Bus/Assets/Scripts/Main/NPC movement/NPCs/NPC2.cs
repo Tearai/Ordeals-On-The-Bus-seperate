@@ -32,13 +32,20 @@ public class NPC2 : MonoBehaviour
     public Animator NPC1Animations;
     public GameObject Animation;
 
-    [Header("Animations")]
+    [Header("Leaving")]
     public string leavingdestination;
     public bool canleave;
+
+    [Header("Ragdoll")]
+    private Transform hipBone;
+    public string getup;
+    public GameObject Bones;
+    public Rigidbody[] _ragdollRigidbodies;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
     public bool Dialogue1;
+    public GameObject SecondDialogue;
     public GameObject ThirdDialogue;
     public bool Dialogue3;
 
@@ -47,6 +54,15 @@ public class NPC2 : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = movementSpeed; // Set the initial speed 
         NPC1Animations = Animation.GetComponent<Animator>();
+
+        //ragdol 
+        hipBone = NPC1Animations.GetBoneTransform(HumanBodyBones.Hips);
+        _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
+
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
 
 
     }
@@ -100,7 +116,10 @@ public class NPC2 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+            NPC1Animations.SetBool("isHand", false);
+
             Dialogue3 = true;
+
         }
 
         if (Dialogue3 == true)
@@ -129,12 +148,34 @@ public class NPC2 : MonoBehaviour
         {
             ticket.enabled = true;
             transform.LookAt(Player.transform);
+            NPC1Animations.SetBool("isHand", true);
 
             if (Dialogue1 == false)
             {
                 firstDialogue.SetActive(true);
                 Dialogue1 = true;
             }
+        }
+
+        if (other.CompareTag("Hand"))
+        {
+            ragdoll();
+            firstDialogue.SetActive(false);
+
+            foreach (var rigidbody in _ragdollRigidbodies)
+            {
+                rigidbody.isKinematic = false;
+            }
+
+
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            NPC1Animations.SetBool("isHand", false);
         }
     }
 
@@ -155,7 +196,7 @@ public class NPC2 : MonoBehaviour
 
             GameObject randomSeat = GameObject.Find(randomSeatName);
 
-  
+
             MoveTowardsTarget(randomSeatName); // Pass the string as the target
 
 
@@ -218,5 +259,64 @@ public class NPC2 : MonoBehaviour
         NavMesh.SamplePosition(randomDirection, out navHit, 5f, -1);
 
         return navHit.position;
+    }
+
+    public void ragdoll()
+    {
+        Vector3 savedPosition = transform.position;
+        Quaternion savedRotation = transform.rotation;
+
+
+        NPC1Animations.enabled = false;
+        navMeshAgent.isStopped = true;
+
+        SecondDialogue.SetActive(true);
+        StartCoroutine(RestorePositionAndRotation(savedPosition, savedRotation));
+    }
+
+    IEnumerator RestorePositionAndRotation(Vector3 position, Quaternion rotation)
+    {
+        //NPC1Animations.SetBool("isStand", true);
+        NPC1Animations.Play(getup);
+
+
+        yield return new WaitForSeconds(5f);
+
+        Vector3 originalHipsPosition = hipBone.position;
+        transform.position = hipBone.position;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hitInfo))
+        {
+            transform.position = new Vector3(transform.position.x, hitInfo.point.y, transform.position.z);
+        }
+
+        hipBone.position = originalHipsPosition;
+
+
+        NPC1Animations.enabled = true;
+
+        yield return new WaitForSeconds(2.5f);
+
+        NPC1Animations.SetBool("isStand", false);
+
+
+
+        yield return new WaitForSeconds(2.5f);
+        navMeshAgent.isStopped = false;
+        SecondDialogue.SetActive(false);
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
+    }
+
+    public void flinch()
+    {
+        NPC1Animations.SetBool("isFlinch", true);
+    }
+
+    public void noflinch()
+    {
+        NPC1Animations.SetBool("isFlinch", false);
     }
 }

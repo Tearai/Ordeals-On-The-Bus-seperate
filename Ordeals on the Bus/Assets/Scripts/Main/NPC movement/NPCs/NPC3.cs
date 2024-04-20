@@ -50,6 +50,12 @@ public class NPC3 : MonoBehaviour
 
     private float startTime;
 
+    [Header("Ragdoll")]
+    private Transform hipBone;
+    public string getup;
+    public GameObject Bones;
+    public Rigidbody[] _ragdollRigidbodies;
+
     [Header("Dialogue")]
     public GameObject firstDialogue;
     public bool Dialogue1;
@@ -66,6 +72,15 @@ public class NPC3 : MonoBehaviour
 
         //color change 
         startTime = Time.time;
+
+        //ragdol
+        hipBone = NPC1Animations.GetBoneTransform(HumanBodyBones.Hips);
+        _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
+
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
     }
 
     void Update()

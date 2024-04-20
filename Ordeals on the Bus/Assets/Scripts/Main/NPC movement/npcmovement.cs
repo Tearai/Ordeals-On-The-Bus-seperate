@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using FMODUnity;
 
 public class npcmovement : MonoBehaviour
 {
@@ -34,7 +33,7 @@ public class npcmovement : MonoBehaviour
     public Animator NPC1Animations;
     public GameObject Animation;
 
-    [Header("Animations")]
+    [Header("Leaving")]
     public string leavingdestination;
     public bool canleave;
 
@@ -73,6 +72,7 @@ public class npcmovement : MonoBehaviour
 
             navMeshAgent.isStopped = false;
         }
+
         if (vip.isonFire == true && !string.IsNullOrEmpty(randomMovementAreaName))
         {
             GameObject randomMovementArea = GameObject.Find(randomMovementAreaName);
