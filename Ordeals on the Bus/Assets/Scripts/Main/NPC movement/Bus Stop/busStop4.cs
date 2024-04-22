@@ -19,6 +19,8 @@ public class busStop4 : MonoBehaviour
     //bool
     public npcspawnbool4 inZone;
 
+    public GameObject doorSFX;
+    public GameObject closedoorSFX;
 
     void Start()
     {
@@ -40,6 +42,8 @@ public class busStop4 : MonoBehaviour
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(DoorOpening());
+            doorSFX.SetActive(true);
+            closedoorSFX.SetActive(false);
         }
     }
 

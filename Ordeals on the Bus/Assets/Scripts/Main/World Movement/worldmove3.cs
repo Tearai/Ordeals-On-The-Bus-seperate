@@ -52,6 +52,10 @@ public class worldmove3 : MonoBehaviour
     public XRKnob wheel;
     public float wheelangle;
 
+    //bus sfx
+    public GameObject doorsfx;
+    public GameObject closedoorsfx;
+
 
     void Start()
     {
@@ -124,6 +128,8 @@ public class worldmove3 : MonoBehaviour
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(MoveOut());
+            doorsfx.SetActive(false);
+            closedoorsfx.SetActive(true);
         }
     }
 

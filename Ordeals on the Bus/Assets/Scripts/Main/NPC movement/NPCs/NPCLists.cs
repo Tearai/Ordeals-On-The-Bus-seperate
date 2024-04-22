@@ -12,6 +12,8 @@ public class NPCLists : MonoBehaviour
 
     public busStop5 stop;
 
+    public GameObject doorsfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class NPCLists : MonoBehaviour
 
     public void npcleave()
     {
-        if(stop.busstoping == true)
+        if (stop.busstoping == true)
         {
             npc1.canleave = true;
             npc1.gotoseat = false;
@@ -42,6 +44,8 @@ public class NPCLists : MonoBehaviour
 
             npc5.canleave = true;
             npc5.gotoseat = false;
+
+            doorsfx.SetActive(true);
 
         }
     }

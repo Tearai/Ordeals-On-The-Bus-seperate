@@ -340,6 +340,7 @@ MonoBehaviour:
   - {fileID: 8914909151291644343}
   - {fileID: -6413264201645862251}
   - {fileID: 9004854474642674256}
+  - {fileID: 4834629316411996660}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
@@ -353,13 +354,42 @@ MonoBehaviour:
   - {fileID: 1853842978891479349}
   - {fileID: 6617225937642860549}
   - {fileID: -4453390150516811431}
+  - {fileID: 1612581398618206159}
+  - {fileID: 6344842286443437168}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638491623504146855
+  cacheTime: 638494245352983974
   cacheVersion: 131616
+--- !u!114 &1612581398618206159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bus door open SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Bus door open SFX
+  Guid:
+    Data1: -74478764
+    Data2: 1085388198
+    Data3: -827437940
+    Data4: -53805828
+  Banks:
+  - {fileID: 4834629316411996660}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 410
 --- !u!114 &1762766685649486540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,7 +486,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638491623503528435
+  lastModified: 638494245351777483
   FileSizes:
   - Name: Desktop
     Value: 3322
@@ -476,10 +506,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638491623503538515
+  lastModified: 638494245351777483
   FileSizes:
   - Name: Desktop
-    Value: 1648
+    Value: 1800
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
@@ -508,6 +538,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 40724
+--- !u!114 &4834629316411996660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bus door SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Bus door SFX.bank
+  Name: Bus door SFX
+  StudioPath: bank:/Bus door SFX
+  lastModified: 638494245352983974
+  FileSizes:
+  - Name: Desktop
+    Value: 56672
+  Exists: 1
+--- !u!114 &6344842286443437168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bus door close SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Bus door close SFX
+  Guid:
+    Data1: -2060001068
+    Data2: 1282788715
+    Data3: -1133198454
+    Data4: -1273464769
+  Banks:
+  - {fileID: 4834629316411996660}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
 --- !u!114 &6617225937642860549
 MonoBehaviour:
   m_ObjectHideFlags: 0

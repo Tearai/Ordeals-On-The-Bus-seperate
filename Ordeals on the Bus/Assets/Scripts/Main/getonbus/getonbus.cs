@@ -19,6 +19,9 @@ public class getonbus : MonoBehaviour
     public npcmovement npc1;
     //bool
     public npcspawnbool inZone;
+
+    public GameObject doorSFX;
+    public GameObject closedoorSFX;
     
 
 
@@ -39,6 +42,8 @@ public class getonbus : MonoBehaviour
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(DoorOpening());
+            doorSFX.SetActive(true);
+            closedoorSFX.SetActive(false);
         }
     }
 

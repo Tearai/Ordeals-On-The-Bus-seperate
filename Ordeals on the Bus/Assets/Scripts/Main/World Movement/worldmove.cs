@@ -54,6 +54,10 @@ public class worldmove : MonoBehaviour
     public float newSpeed;
     public float sliderValue;
 
+    //bus sfx
+    public GameObject doorsfx;
+    public GameObject closedoorsfx;
+
 
     void Start()
     {
@@ -131,12 +135,16 @@ public class worldmove : MonoBehaviour
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(MoveOut());
+            doorsfx.SetActive(false);
+            closedoorsfx.SetActive(true);
         }
 
         if (npcleave2.ticket3 == true)
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(MoveOut());
+            doorsfx.SetActive(false);
+            closedoorsfx.SetActive(true);
         }
     }
 

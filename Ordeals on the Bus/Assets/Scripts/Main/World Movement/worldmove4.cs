@@ -50,6 +50,11 @@ public class worldmove4 : MonoBehaviour
 
     public XRKnob wheel;
     public float wheelangle;
+
+    //bus sfx
+    public GameObject doorsfx;
+    public GameObject closedoorsfx;
+
     void Start()
     {
         stoppingbus = GameObject.FindGameObjectWithTag("Stop").GetComponent<stopbus>();
@@ -127,6 +132,8 @@ public class worldmove4 : MonoBehaviour
         {
             busdoorAnim.Play(animationName);
             StartCoroutine(MoveOut());
+            doorsfx.SetActive(false);
+            closedoorsfx.SetActive(true);
         }
     }
 
