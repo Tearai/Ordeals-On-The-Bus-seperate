@@ -29,7 +29,7 @@ public class NPC4 : MonoBehaviour
     [Header("Mayham")]
     public bool mayham;
     public string randomMovementAreaName;
-    public vipmovement vip;
+    public gorillaland vip;
 
     [Header("Animations")]
     public Animator NPC1Animations;
@@ -58,15 +58,18 @@ public class NPC4 : MonoBehaviour
 
     void Update()
     {
-        if (vip.isonFire == true)
+        if (vip.touchedGround == true)
         {
             navMeshAgent.isStopped = false;
         }
 
 
-        if (vip.isonFire == true && !string.IsNullOrEmpty(randomMovementAreaName))
+        if (vip.touchedGround == true && !string.IsNullOrEmpty(randomMovementAreaName))
         {
             GameObject randomMovementArea = GameObject.Find(randomMovementAreaName);
+
+            NPC1Animations.SetBool("getup", true);
+            NPC1Animations.SetBool("isSit", false);
 
             if (randomMovementArea != null)
             {
@@ -84,7 +87,7 @@ public class NPC4 : MonoBehaviour
 
 
 
-        if (vip.isonFire == false && gotoseat == false)
+        if (vip.touchedGround == false && gotoseat == false)
         {
             MoveTowardsTarget(targetObjectName);
             NPC1Animations.SetBool("isWalk", true);
@@ -115,7 +118,7 @@ public class NPC4 : MonoBehaviour
         }
 
 
-        if (gotoseat == true && vip.isonFire == false)
+        if (gotoseat == true && vip.touchedGround == false)
         {
             GoToRandomSeat();
         }
