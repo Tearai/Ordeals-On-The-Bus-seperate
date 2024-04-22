@@ -41,6 +41,7 @@ public class NPC5 : MonoBehaviour
     public GameObject smokingVFX;
     public ParticleSystem smoke;
     public bool canSmoke;
+    public windowdown window;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -130,23 +131,42 @@ public class NPC5 : MonoBehaviour
             NPC1Animations.SetBool("isSit", false);
         }
 
-        //smoke
-        if(canSmoke == true)
+        if(smoking == true)
         {
+            notToggleSmoke();
+        }
+    }
+
+    public void toggleSmoke()
+    {
+        window.toggle = false;
+        var main = smoke.main;
+        main.loop = true;
+        smoke.Play();
+        FourthDialogue.SetActive(true);
+        canSmoke = false;
+    }
+
+    public void notToggleSmoke()
+    {
+        if (canSmoke == false)
+        {
+            window.toggle = true;
             var main = smoke.main;
             main.loop = false;
             FourthDialogue.SetActive(false);
-        }
-
-        if (smoking == true)
-        {
-            var main = smoke.main;
-            main.loop = true;
-            smoke.Play();
-            FourthDialogue.SetActive(true);
+            canSmoke = true;
+            StartCoroutine(smokeAgain());
 
         }
-        
+    }
+
+    IEnumerator smokeAgain()
+    {
+        yield return new WaitForSeconds(.2f);
+        canSmoke = false;
+        yield return new WaitForSeconds(15f);
+        toggleSmoke();
     }
 
     public void OnTriggerEnter(Collider other)
