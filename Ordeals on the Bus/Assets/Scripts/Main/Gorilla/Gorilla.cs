@@ -31,6 +31,10 @@ public class Gorilla : MonoBehaviour
     [Header("Animations")]
     public Animator gorillaAnimator;
 
+    [Header("Death")]
+    public gorillaland land;
+    public GameObject landCheck;
+
     [Header("SFX")]
     public GameObject breakBusSFX;
     public GameObject swingSFX;
@@ -153,6 +157,7 @@ public class Gorilla : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        Destroy(landCheck);
+        land.touchedGround = false;
     }
 }
