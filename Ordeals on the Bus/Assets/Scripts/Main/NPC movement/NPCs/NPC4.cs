@@ -40,19 +40,39 @@ public class NPC4 : MonoBehaviour
     public bool canleave;
     public bool canDriveOff;
 
+    [Header("Ragdoll")]
+    private Transform hipBone;
+    public string getup;
+    public GameObject Bones;
+    public Rigidbody[] _ragdollRigidbodies;
+
     [Header("Dialogue")]
     public GameObject firstDialogue;
     public bool Dialogue1;
+    public GameObject SecondDialogue;
     public GameObject ThirdDialogue;
     public bool Dialogue3;
     public GameObject FourthDialogue;
     public bool Dialogue4;
+    public GameObject FifthDialogue;
+    public bool Dialogue5;
+    public GameObject SixthDialogue;
+    public GameObject SeventhDialogue;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = movementSpeed; // Set the initial speed 
         NPC1Animations = Animation.GetComponent<Animator>();
+
+        //ragdol 
+        hipBone = NPC1Animations.GetBoneTransform(HumanBodyBones.Hips);
+        _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
+
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
 
     }
 
@@ -108,6 +128,7 @@ public class NPC4 : MonoBehaviour
             mayham = false;
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
+            NPC1Animations.SetBool("isHand", false);
             Dialogue3 = true;
         }
 
@@ -133,21 +154,35 @@ public class NPC4 : MonoBehaviour
         //showing ticket
         showticket = smelly.canGeton;
 
-        if (canShow == true && showticket == true)
+        if (canShow == true && showticket == true && ticket4 == false)
         {
             ticket.enabled = true;
+            NPC1Animations.SetBool("isHand", true);
+            firstDialogue.SetActive(false);
+            FifthDialogue.SetActive(true);
+            SixthDialogue.SetActive(false);
+            Dialogue5 = true;
         }
         else
         {
             ticket.enabled = false;
+            NPC1Animations.SetBool("isHand", false);
+            FifthDialogue.SetActive(false);
         }
-        
-        if(Dialogue4 == true && showticket == true)
+
+        if(canShow == true && showticket == false && Dialogue5 == true)
+        {
+            SixthDialogue.SetActive(true);
+            Dialogue5 = false;
+        }
+
+
+        if (Dialogue4 == true && showticket == true)
         {
             FourthDialogue.SetActive(true);
         }
 
-        if(Dialogue4 == true && showticket == false)
+        if (Dialogue4 == true && showticket == false)
         {
             FourthDialogue.SetActive(false);
         }
@@ -166,6 +201,25 @@ public class NPC4 : MonoBehaviour
                 firstDialogue.SetActive(true);
                 Dialogue1 = true;
             }
+        }
+
+        if (other.CompareTag("Hand"))
+        {
+            ragdoll();
+            firstDialogue.SetActive(false);
+
+            foreach (var rigidbody in _ragdollRigidbodies)
+            {
+                rigidbody.isKinematic = false;
+            }
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            canShow = false;
         }
     }
 
@@ -251,4 +305,68 @@ public class NPC4 : MonoBehaviour
 
         return navHit.position;
     }
+
+    public void ragdoll()
+    {
+        Vector3 savedPosition = transform.position;
+        Quaternion savedRotation = transform.rotation;
+
+
+        NPC1Animations.enabled = false;
+        navMeshAgent.isStopped = true;
+
+        SecondDialogue.SetActive(true);
+        StartCoroutine(RestorePositionAndRotation(savedPosition, savedRotation));
+        SeventhDialogue.SetActive(false);
+    }
+
+    IEnumerator RestorePositionAndRotation(Vector3 position, Quaternion rotation)
+    {
+        //NPC1Animations.SetBool("isStand", true);
+        NPC1Animations.Play(getup);
+
+
+        yield return new WaitForSeconds(5f);
+
+        Vector3 originalHipsPosition = hipBone.position;
+        transform.position = hipBone.position;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hitInfo))
+        {
+            transform.position = new Vector3(transform.position.x, hitInfo.point.y, transform.position.z);
+        }
+
+        hipBone.position = originalHipsPosition;
+
+
+        NPC1Animations.enabled = true;
+
+        yield return new WaitForSeconds(2.5f);
+
+        NPC1Animations.SetBool("isStand", false);
+
+
+
+        yield return new WaitForSeconds(2.5f);
+        navMeshAgent.isStopped = false;
+        SecondDialogue.SetActive(false);
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
+        SeventhDialogue.SetActive(false);
+    }
+
+    public void flinch()
+    {
+        NPC1Animations.SetBool("isFlinch", true);
+        SeventhDialogue.SetActive(true);
+        firstDialogue.SetActive(false);
+    }
+
+    public void noflinch()
+    {
+        NPC1Animations.SetBool("isFlinch", false);
+    }
+
 }
