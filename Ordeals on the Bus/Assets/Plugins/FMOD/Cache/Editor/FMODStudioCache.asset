@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638489791442862264
+  lastModified: 638495275976030388
   FileSizes:
   - Name: Desktop
     Value: 4262592
@@ -99,7 +99,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
+  MinDistance: 0
   MaxDistance: 20
   Length: 1044
 --- !u!114 &-6413264201645862251
@@ -343,7 +343,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 100
   Length: 299232
 --- !u!114 &11400000
 MonoBehaviour:
@@ -390,7 +390,7 @@ MonoBehaviour:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638495205234142721
+  cacheTime: 638495292665286482
   cacheVersion: 131616
 --- !u!114 &870059850876793230
 MonoBehaviour:
@@ -407,7 +407,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Banana Mafia Event.bank
   Name: Banana Mafia Event
   StudioPath: bank:/Banana Mafia Event
-  lastModified: 638495205234142721
+  lastModified: 638495292665085186
   FileSizes:
   - Name: Desktop
     Value: 7872
@@ -585,7 +585,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 100
   Length: 40724
 --- !u!114 &4834629316411996660
 MonoBehaviour:
@@ -676,7 +676,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Car SFXs.bank
   Name: Car SFXs
   StudioPath: bank:/Car SFXs
-  lastModified: 638489767935551015
+  lastModified: 638495292665286482
   FileSizes:
   - Name: Desktop
     Value: 648576

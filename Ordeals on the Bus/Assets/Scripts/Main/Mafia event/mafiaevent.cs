@@ -30,27 +30,23 @@ public class mafiaevent : MonoBehaviour
     [Header("Orange Gang2")]
     public GameObject Gang2;
     public Animator Gang2Anim;
-    public GameObject gunSFX2;
 
     [Header("Orange Gang3")]
     public GameObject Gang3;
     public Animator Gang3Anim;
-    public GameObject gunSFX3;
+
 
     [Header("Orange Gang4")]
     public GameObject Gang4;
     public Animator Gang4Anim;
-    public GameObject gunSFX4;
 
     [Header("Orange Gang5")]
     public GameObject Gang5;
     public Animator Gang5Anim;
-    public GameObject gunSFX5;
 
     [Header("Orange Gang6")]
     public GameObject Gang6;
     public Animator Gang6Anim;
-    public GameObject gunSFX6;
 
     // Start is called before the first frame update
     void Start()
@@ -128,7 +124,6 @@ public class mafiaevent : MonoBehaviour
     public void shooting2()
     {
         Gang2Anim.SetBool("Shot", true);
-        gunSFX2.SetActive(true);
     }
 
     public void shoot3()
@@ -139,7 +134,6 @@ public class mafiaevent : MonoBehaviour
     public void shooting3()
     {
         Gang3Anim.SetBool("Shot", true);
-        gunSFX3.SetActive(true);
     }
 
     public void shoot4()
@@ -150,7 +144,6 @@ public class mafiaevent : MonoBehaviour
     public void shooting4()
     {
         Gang4Anim.SetBool("Shot", true);
-        gunSFX4.SetActive(true);
     }
 
     public void shoot5()
@@ -161,7 +154,6 @@ public class mafiaevent : MonoBehaviour
     public void shooting5()
     {
         Gang5Anim.SetBool("Shot", true);
-        gunSFX5.SetActive(true);
     }
 
     public void shoot6()
@@ -172,7 +164,6 @@ public class mafiaevent : MonoBehaviour
     public void shooting6()
     {
         Gang6Anim.SetBool("Shot", true);
-        gunSFX6.SetActive(true);
     }
 
     public void gotshot()
@@ -185,6 +176,7 @@ public class mafiaevent : MonoBehaviour
         }
 
         deathSFX1.SetActive(true);
+        Dialogue1.SetActive(false);
     }
 
     public void gotshot2()
@@ -196,5 +188,6 @@ public class mafiaevent : MonoBehaviour
             rigidbody.isKinematic = false;
         }
         deathSFX2.SetActive(true);
+        Dialogue2.SetActive(false);
     }
 }
