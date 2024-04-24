@@ -10,6 +10,7 @@ public class rotateFix : MonoBehaviour
 
     public float value;
 
+    public float tolerance = 0.01f;
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +20,7 @@ public class rotateFix : MonoBehaviour
             map.transform.Rotate(0f, value, 0f); // Adjust rotation increment as needed
 
             // Check if the Y rotation is close to 179.9 degrees
-            if (Mathf.Approximately(map.transform.rotation.eulerAngles.y, 179.99f))
+            if (Mathf.Abs(map.transform.rotation.eulerAngles.y - 179.99f) < tolerance)
             {
                 go = false; // Set go to false
                 map.transform.rotation = Quaternion.Euler(map.transform.rotation.eulerAngles.x, 180f, map.transform.rotation.eulerAngles.z);
