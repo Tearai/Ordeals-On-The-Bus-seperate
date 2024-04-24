@@ -75,6 +75,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18019
+--- !u!114 &-6533842947371639994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gun Shot
+  m_EditorClassIdentifier: 
+  Path: event:/Gun Shot
+  Guid:
+    Data1: 1983475467
+    Data2: 1289552321
+    Data3: 1987300285
+    Data4: 1859440923
+  Banks:
+  - {fileID: 870059850876793230}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1044
 --- !u!114 &-6413264201645862251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +368,7 @@ MonoBehaviour:
   - {fileID: -6413264201645862251}
   - {fileID: 9004854474642674256}
   - {fileID: 4834629316411996660}
+  - {fileID: 870059850876793230}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
@@ -356,13 +384,34 @@ MonoBehaviour:
   - {fileID: -4453390150516811431}
   - {fileID: 1612581398618206159}
   - {fileID: 6344842286443437168}
+  - {fileID: -6533842947371639994}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638494245352983974
+  cacheTime: 638495205234142721
   cacheVersion: 131616
+--- !u!114 &870059850876793230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Banana Mafia Event.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Banana Mafia Event.bank
+  Name: Banana Mafia Event
+  StudioPath: bank:/Banana Mafia Event
+  lastModified: 638495205234142721
+  FileSizes:
+  - Name: Desktop
+    Value: 7872
+  Exists: 1
 --- !u!114 &1612581398618206159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +535,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638494245351777483
+  lastModified: 638495205233814647
   FileSizes:
   - Name: Desktop
     Value: 3322
@@ -506,10 +555,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638494245351777483
+  lastModified: 638495205233824731
   FileSizes:
   - Name: Desktop
-    Value: 1800
+    Value: 1898
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
