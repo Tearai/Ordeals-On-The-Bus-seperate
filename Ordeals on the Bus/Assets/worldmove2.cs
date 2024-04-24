@@ -14,7 +14,6 @@ public class worldmove2 : MonoBehaviour
     public float targetXPosition = 114.32f; // Change back to X position
     public float moveSpeed = 1f;
     public bool canPark;
-    public dockcheck dockk;
 
     // Reference to stopbus script
     stopbus stoppingbus;
@@ -54,7 +53,7 @@ public class worldmove2 : MonoBehaviour
         stoppingbus = GameObject.FindGameObjectWithTag("Stop").GetComponent<stopbus>();
         busdoorAnim = busdoor.GetComponent<Animator>();
         canspeed = true;
-        UpdateBusPosition();
+        //UpdateBusPosition();
     }
 
     void Update()
@@ -67,11 +66,6 @@ public class worldmove2 : MonoBehaviour
         drive(speed * newSpeed); // Drive with the new speed
 
 
-
-        if (dockk.dockingmode == true && canPark == false)
-        {
-            buspark(); // Call the BusPark method
-        }
 
         // Check if the world is stopped
         if (worldStopped)

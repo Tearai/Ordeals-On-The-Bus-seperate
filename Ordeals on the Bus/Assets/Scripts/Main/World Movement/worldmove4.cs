@@ -18,7 +18,6 @@ public class worldmove4 : MonoBehaviour
     public float targetXPosition = 114.32f;
     public float moveSpeed = 1f;
     public bool canPark;
-    public dockcheck dockk;
 
     //Speed
     public float finalspeed;
@@ -55,12 +54,25 @@ public class worldmove4 : MonoBehaviour
     public GameObject doorsfx;
     public GameObject closedoorsfx;
 
+    public rotatebus laneFix;
+
     void Start()
     {
         stoppingbus = GameObject.FindGameObjectWithTag("Stop").GetComponent<stopbus>();
         busdoorAnim = busdoor.GetComponent<Animator>();
         canspeed = true;
-        UpdateBusPosition();
+        //UpdateBusPosition();
+
+        if(laneFix.laneSwitch == true)
+        {
+            lanes[0] = -45f;
+            lanes[1] = -50f;
+            lanes[2] = -55f;
+            gobackPosition = 50f;
+            targetXPosition = -45f;
+
+        }
+
     }
 
     void Update()
