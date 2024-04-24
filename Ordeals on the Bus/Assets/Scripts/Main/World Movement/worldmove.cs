@@ -33,8 +33,6 @@ public class worldmove : MonoBehaviour
     public float gobackPosition = 109.42f;
 
     // Variables for switching lanes
-    public GameObject leftButton;
-    public GameObject rightButton;
     public float[] lanes;
     public int currentLaneIndex = 1;
     public bool isSwitchingLane = false;
@@ -58,6 +56,8 @@ public class worldmove : MonoBehaviour
     public GameObject doorsfx;
     public GameObject closedoorsfx;
 
+    public bool driveforward;
+
 
     void Start()
     {
@@ -72,7 +72,7 @@ public class worldmove : MonoBehaviour
         //Wheel value
         wheelangle = wheel.value;
 
-        if(wheelangle == 1)
+        if (wheelangle == 1)
         {
             Right();
         }
@@ -89,7 +89,16 @@ public class worldmove : MonoBehaviour
 
         finalspeed = newSpeed * speed;
 
-        drive(finalspeed); // Drive with the new speed
+        if (driveforward == false)
+        {
+            drive(finalspeed); // Drive with the new speed
+        }
+
+        if (driveforward == true)
+        {
+            driveback(finalspeed);
+        }
+
 
         //bus driving
         //drive();
@@ -159,14 +168,14 @@ public class worldmove : MonoBehaviour
 
     public void buspark()
     {
-        float step = finalspeed/2 * Time.deltaTime;
+        float step = finalspeed / 2 * Time.deltaTime;
         transform.position = new Vector3(Mathf.MoveTowards(transform.position.x, targetXPosition, step), transform.position.y, transform.position.z);
         currentLaneIndex = 0;
     }
 
     void GoBack()
     {
-        float step = finalspeed/2 * Time.deltaTime;
+        float step = finalspeed / 2 * Time.deltaTime;
         transform.position = new Vector3(Mathf.MoveTowards(transform.position.x, gobackPosition, step), transform.position.y, transform.position.z);
     }
 
@@ -188,7 +197,7 @@ public class worldmove : MonoBehaviour
 
         while (Mathf.Abs(transform.position.x - targetX) > 0.01f)
         {
-            float step = finalspeed/2 * Time.deltaTime;
+            float step = finalspeed / 2 * Time.deltaTime;
             transform.position = new Vector3(Mathf.MoveTowards(transform.position.x, targetX, step), transform.position.y, transform.position.z);
             yield return null;
         }
@@ -211,7 +220,7 @@ public class worldmove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Traffic"))
         {
-           
+
             // Stop the world for 2 seconds
             originalSpeed = speed;
             speed = 0;
@@ -226,4 +235,10 @@ public class worldmove : MonoBehaviour
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
+
+    void driveback(float speed)
+    {
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
+    }
+
 }
