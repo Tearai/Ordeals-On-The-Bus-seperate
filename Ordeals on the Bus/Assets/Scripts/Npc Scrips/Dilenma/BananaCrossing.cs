@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,13 +26,32 @@ public class BananaCrossing : MonoBehaviour
     public bool GotHit;
     public bool self;
 
+    [Header("Ragdoll")]
+    private Transform hipBone;
+    public GameObject Bones;
+    public Rigidbody[] _ragdollRigidbodies;
+    public float hitForce = 500f;
+
+    [Header("SFX")]
+    public GameObject Dialogue1;
+    public GameObject Dialogue2;
+    public GameObject DialogueScream;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         // Set the initial speed 
         NPC1Animations = Animation.GetComponent<Animator>();
 
+        hipBone = NPC1Animations.GetBoneTransform(HumanBodyBones.Hips);
+        _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
 
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
+
+        Dialogue1.SetActive(true);
     }
 
     void Update()
@@ -56,6 +75,11 @@ public class BananaCrossing : MonoBehaviour
         if(GotHit == true && self == false)
         {
             navMeshAgent.isStopped = true;
+            Dialogue1.SetActive(false);
+            DialogueScream.SetActive(true);
+            NPC1Animations.SetBool("isIdle", false);
+            NPC1Animations.SetBool("isWalk", false);
+            NPC1Animations.SetBool("isScared", true);
         }
 
 
@@ -70,6 +94,17 @@ public class BananaCrossing : MonoBehaviour
             SplatterVFX.SetActive(true);
             GotHit = true;
             self = true;
+            NPC1Animations.enabled = false;
+            Dialogue1.SetActive(false);
+            Dialogue2.SetActive(true);
+
+            foreach (var rigidbody in _ragdollRigidbodies)
+            {
+                rigidbody.isKinematic = false;
+                // Apply force to ragdoll parts to simulate being hit
+                rigidbody.AddForce(Vector3.up * hitForce, ForceMode.Impulse);
+                rigidbody.AddForce(-transform.right * hitForce, ForceMode.Impulse);
+            }
         }
     }
 
