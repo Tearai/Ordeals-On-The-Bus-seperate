@@ -71,7 +71,7 @@ public class NPC7 : MonoBehaviour
 
         if(other.CompareTag("End"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -94,8 +94,9 @@ public class NPC7 : MonoBehaviour
     {
         yield return new WaitForSeconds(WaitTime);
         targetObjectName = LeaveAreaName;
-        NPC1Animations.SetBool("isWalk", true);
+        NPC1Animations.SetBool("isWalk", false);
         NPC1Animations.SetBool("isIdle", false);
+        NPC1Animations.SetBool("isRun", true);
         npc.canDriveOff = true;
 
         float runSpeed = 5f;

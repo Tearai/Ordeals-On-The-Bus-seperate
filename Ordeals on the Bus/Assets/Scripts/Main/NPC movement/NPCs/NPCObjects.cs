@@ -18,12 +18,10 @@ public class NPCObjects : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other)
+
+    public void gotmustache()
     {
-        if (other.gameObject.CompareTag("Hand"))
-        {
-            StartCoroutine(Timer());
-        }
+        StartCoroutine(Timer());
     }
 
     IEnumerator Timer()

@@ -21,11 +21,8 @@ public class Ticketchilding : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void ticketoff()
     {
-        if (other.gameObject.CompareTag("Hand"))
-        {
-            ticketisoff = true;
-        }
+        ticketisoff = true;
     }
 }

@@ -28,6 +28,7 @@ public class NPC6 : MonoBehaviour
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
+    public GameObject secondDialogue;
 
     void Start()
     {
@@ -56,9 +57,12 @@ public class NPC6 : MonoBehaviour
 
         if(run == true)
         {
+            firstDialogue.SetActive(false);
+            secondDialogue.SetActive(true);
             targetObjectName = LeaveAreaName;
-            NPC1Animations.SetBool("isWalk", true);
+            NPC1Animations.SetBool("isWalk", false);
             NPC1Animations.SetBool("isIdle", false);
+            NPC1Animations.SetBool("isRun", true);
             navMeshAgent.speed = 5f;
         }
 
@@ -75,7 +79,7 @@ public class NPC6 : MonoBehaviour
 
         if (other.CompareTag("End"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
