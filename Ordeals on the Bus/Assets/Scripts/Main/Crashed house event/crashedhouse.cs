@@ -9,6 +9,8 @@ public class crashedhouse : MonoBehaviour
 
     public GameObject turnObject;
 
+    public float waitTime = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class crashedhouse : MonoBehaviour
 
     IEnumerator crashedEvent()
     {
+        yield return new WaitForSeconds(waitTime);
         map.driveforward = true;
         map.speed = 1;
         yield return new WaitForSeconds(driveBackTime);
