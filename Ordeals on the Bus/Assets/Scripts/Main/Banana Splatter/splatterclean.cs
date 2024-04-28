@@ -95,13 +95,18 @@ public class splatterclean : MonoBehaviour
 
         if (lever.value == true)
         {
-            wiperAnimator.Play(wipeAnimation);
+            //wiperAnimator.Play(wipeAnimation);
             playonce = true;
+            if(playonce == true)
+            {
+                wiperAnimator.SetBool("isSwipe", true);
+            }
         }
 
         if (lever.value == false && playonce == true)
         {
-            wiperAnimator.Play(wipeAnimation2);
+            //wiperAnimator.Play(wipeAnimation2);
+            wiperAnimator.SetBool("isSwipe", false);
         }
     }
 
