@@ -169,6 +169,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3698943975452977661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial Dialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial Dialogue
+  Guid:
+    Data1: 2090694106
+    Data2: 1205521027
+    Data3: -328612224
+    Data4: -853766680
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21600
 --- !u!114 &-3679760329407770255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +223,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3587746582396802372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Supervisor Dialogue.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Supervisor Dialogue.bank
+  Name: Supervisor Dialogue
+  StudioPath: bank:/Supervisor Dialogue
+  lastModified: 638500181946526317
+  FileSizes:
+  - Name: Desktop
+    Value: 211168
+  Exists: 1
 --- !u!114 &-3579636383332447431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +417,7 @@ MonoBehaviour:
   - {fileID: 4834629316411996660}
   - {fileID: 870059850876793230}
   - {fileID: 7764878397045912248}
+  - {fileID: -3587746582396802372}
   EditorEvents:
   - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
@@ -387,12 +435,13 @@ MonoBehaviour:
   - {fileID: 6344842286443437168}
   - {fileID: -6533842947371639994}
   - {fileID: 9133915013446753375}
+  - {fileID: -3698943975452977661}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638495596726324422
+  cacheTime: 638500181946526317
   cacheVersion: 131616
 --- !u!114 &870059850876793230
 MonoBehaviour:
@@ -537,7 +586,7 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638495596723957630
+  lastModified: 638500181943610986
   FileSizes:
   - Name: Desktop
     Value: 3322
@@ -557,10 +606,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638495596723973759
+  lastModified: 638500181943621037
   FileSizes:
   - Name: Desktop
-    Value: 1988
+    Value: 2086
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:

@@ -488,6 +488,7 @@ MonoBehaviour:
   - Passenger 1
   - Phone SFX
   - Pop up Ads
+  - Supervisor Dialogue
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
