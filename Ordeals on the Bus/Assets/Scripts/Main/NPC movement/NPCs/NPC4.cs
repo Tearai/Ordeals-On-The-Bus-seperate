@@ -45,6 +45,7 @@ public class NPC4 : MonoBehaviour
     public string getup;
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
+    public BoxCollider box1;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -201,6 +202,7 @@ public class NPC4 : MonoBehaviour
                 firstDialogue.SetActive(true);
                 Dialogue1 = true;
             }
+            box1.enabled = true;
         }
 
         if (other.CompareTag("Hand"))
@@ -212,6 +214,7 @@ public class NPC4 : MonoBehaviour
             {
                 rigidbody.isKinematic = false;
             }
+            box1.enabled = false;
         }
     }
 

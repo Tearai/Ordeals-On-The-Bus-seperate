@@ -41,6 +41,7 @@ public class NPC2 : MonoBehaviour
     public string getup;
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
+    public BoxCollider box1;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -151,7 +152,7 @@ public class NPC2 : MonoBehaviour
             ticket.enabled = true;
             transform.LookAt(Player.transform);
             NPC1Animations.SetBool("isHand", true);
-
+            box1.enabled = true;
             if (Dialogue1 == false)
             {
                 firstDialogue.SetActive(true);
@@ -168,7 +169,7 @@ public class NPC2 : MonoBehaviour
             {
                 rigidbody.isKinematic = false;
             }
-
+            box1.enabled = false;
 
         }
     }
