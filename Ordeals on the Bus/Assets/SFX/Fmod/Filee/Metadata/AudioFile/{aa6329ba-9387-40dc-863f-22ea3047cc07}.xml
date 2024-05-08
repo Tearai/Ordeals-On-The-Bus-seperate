@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{aa6329ba-9387-40dc-863f-22ea3047cc07}">
+		<property name="assetPath">
+			<value>T junction/I_hear_the_mafias_around_here.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.1600000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a02d7dd1-c437-4206-afae-3413b65ec53e}</destination>
+		</relationship>
+	</object>
+</objects>

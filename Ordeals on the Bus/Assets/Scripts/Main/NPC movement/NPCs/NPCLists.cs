@@ -14,10 +14,15 @@ public class NPCLists : MonoBehaviour
 
     public GameObject doorsfx;
 
+    public GameObject smokeVFX;
+
+    public GameObject paycheck;
+    public Animator paycheckanim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        paycheckanim = paycheck.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -46,6 +51,10 @@ public class NPCLists : MonoBehaviour
             npc5.gotoseat = false;
 
             doorsfx.SetActive(true);
+
+            smokeVFX.SetActive(false);
+
+            paycheckanim.SetBool("isPay", true);
 
         }
     }

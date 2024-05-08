@@ -31,6 +31,8 @@ public class BananaCrossing : MonoBehaviour
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
     public float hitForce = 500f;
+    public bool canRagdoll;
+ 
 
     [Header("SFX")]
     public GameObject Dialogue1;
@@ -52,6 +54,8 @@ public class BananaCrossing : MonoBehaviour
         }
 
         Dialogue1.SetActive(true);
+
+        canRagdoll = true;
     }
 
     void Update()
@@ -90,21 +94,26 @@ public class BananaCrossing : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            navMeshAgent.isStopped = true;
-            SplatterVFX.SetActive(true);
-            GotHit = true;
-            self = true;
-            NPC1Animations.enabled = false;
-            Dialogue1.SetActive(false);
-            Dialogue2.SetActive(true);
-
-            foreach (var rigidbody in _ragdollRigidbodies)
+            if (canRagdoll == true)
             {
-                rigidbody.isKinematic = false;
-                // Apply force to ragdoll parts to simulate being hit
-                rigidbody.AddForce(Vector3.up * hitForce, ForceMode.Impulse);
-                rigidbody.AddForce(-transform.right * hitForce, ForceMode.Impulse);
+                navMeshAgent.enabled = false;
+                navMeshAgent.isStopped = true;
+                SplatterVFX.SetActive(true);
+                GotHit = true;
+                self = true;
+                NPC1Animations.enabled = false;
+                Dialogue1.SetActive(false);
+                Dialogue2.SetActive(true);
+
+                foreach (var rigidbody in _ragdollRigidbodies)
+                {
+                    rigidbody.isKinematic = false;
+                    // Apply force to ragdoll parts to simulate being hit
+                    rigidbody.AddForce(Vector3.up * hitForce, ForceMode.Impulse);
+                    rigidbody.AddForce(-transform.right * hitForce, ForceMode.Impulse);
+                }
             }
+            
         }
     }
 

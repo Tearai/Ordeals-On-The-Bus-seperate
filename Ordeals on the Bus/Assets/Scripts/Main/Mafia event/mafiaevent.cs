@@ -175,8 +175,7 @@ public class mafiaevent : MonoBehaviour
             rigidbody.isKinematic = false;
         }
 
-        deathSFX1.SetActive(true);
-        Dialogue1.SetActive(false);
+
     }
 
     public void gotshot2()
@@ -187,7 +186,5 @@ public class mafiaevent : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
-        deathSFX2.SetActive(true);
-        Dialogue2.SetActive(false);
     }
 }

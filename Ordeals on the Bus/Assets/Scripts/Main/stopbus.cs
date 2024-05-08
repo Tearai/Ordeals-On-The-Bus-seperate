@@ -9,6 +9,7 @@ public class stopbus : MonoBehaviour
     public dockcheck dock1;
     Collider coll;
     public getonbus npcbus;
+    public GameObject OpendoorDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class stopbus : MonoBehaviour
             coll.enabled = false;
             npcbus.canSpawn = true;
             dock1.dockingmode = false;
+            OpendoorDialogue.SetActive(true);
 
         }
     }
@@ -42,6 +44,7 @@ public class stopbus : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             busstoping = false;
+            OpendoorDialogue.SetActive(false);
         }
     }
 }

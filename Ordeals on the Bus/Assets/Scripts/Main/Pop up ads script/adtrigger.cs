@@ -10,15 +10,6 @@ public class adtrigger : MonoBehaviour
 
     public float time;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!triggered && other.gameObject.CompareTag("Player"))
-        {
-            triggered = true;
-            StartCoroutine(EnableAdsRandomly());
-        }
-    }
-
     private IEnumerator EnableAdsRandomly()
     {
         ShuffleArray(ads);
@@ -27,7 +18,7 @@ public class adtrigger : MonoBehaviour
         foreach (GameObject ad in ads)
         {
             ad.SetActive(true);
-            yield return new WaitForSeconds(time); 
+            yield return new WaitForSeconds(time);
         }
     }
 
@@ -40,5 +31,10 @@ public class adtrigger : MonoBehaviour
             array[i] = array[randomIndex];
             array[randomIndex] = temp;
         }
+    }
+
+    public void spawnads()
+    {
+        StartCoroutine(EnableAdsRandomly());
     }
 }

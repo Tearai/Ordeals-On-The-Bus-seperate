@@ -12,6 +12,7 @@ public class busStop5 : MonoBehaviour
     public Animator busdoorAnim;
     public string animationName;
     public npcspawnbool4 inZone;
+    public GameObject finalDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class busStop5 : MonoBehaviour
             dock1.dockingmode = false;
             busstoping = true;
             busstop.speed = 0;
+            finalDialogue.SetActive(true);
 
         }
     }

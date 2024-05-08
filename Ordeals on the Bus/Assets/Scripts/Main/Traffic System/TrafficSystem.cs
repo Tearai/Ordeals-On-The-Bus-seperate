@@ -16,6 +16,9 @@ public class TrafficSystem : MonoBehaviour
 
     public splatterclean splat;
 
+    public bool playonce;
+    public GameObject CrashedDialogue;
+
     public void Update()
     {
         if(crashed == true)
@@ -35,13 +38,20 @@ public class TrafficSystem : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Traffic"))
+        if (other.gameObject.CompareTag("Traffic"))
         {
             crashed = true;
-            
+
+            if(playonce == false)
+            {
+                CrashedDialogue.SetActive(true);
+                playonce = true;
+            }
+
+
         }
 
-        if(other.gameObject.CompareTag("Splat"))
+        if (other.gameObject.CompareTag("Splat"))
         {
             splat.canShow = true;
             

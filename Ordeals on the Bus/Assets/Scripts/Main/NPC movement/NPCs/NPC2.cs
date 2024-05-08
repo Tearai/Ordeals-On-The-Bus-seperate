@@ -12,16 +12,20 @@ public class NPC2 : MonoBehaviour
     [Header("Going to the driver speed")]
     public float dockingspeed = 5f;
     public string targetObjectName; // Change the target variable to string
-    public GameObject Player;
+    public Transform Player;
 
     [Header("Seats")]
-    public MeshRenderer ticket;
+    public GameObject ticket;
     public bool ticket2;
     public string[] Seats;
     public bool gotoseat;
     private string randomSeatName;
     public GameObject childObject;
     public GameObject parentObject;
+
+    [Header("Look at player")]
+    public bool lookat;
+    public float rotationSpeed = 5f;
 
     [Header("Mayham")]
     public bool mayham;
@@ -42,6 +46,8 @@ public class NPC2 : MonoBehaviour
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
     public BoxCollider box1;
+    public bool canRagdoll;
+    public bool gotHit;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -49,6 +55,15 @@ public class NPC2 : MonoBehaviour
     public GameObject SecondDialogue;
     public GameObject ThirdDialogue;
     public bool Dialogue3;
+    public bool walkback;
+
+    [Header("Mouth")]
+    public Animator MouthAnim;
+    public GameObject Mouth;
+    public string Talk1;
+    public string Talk2;
+    public bool talk2once;
+
 
     void Start()
     {
@@ -65,7 +80,9 @@ public class NPC2 : MonoBehaviour
             rigidbody.isKinematic = true;
         }
 
+        canRagdoll = true;
 
+        MouthAnim = Mouth.GetComponent<Animator>();
     }
 
     void Update()
@@ -78,22 +95,8 @@ public class NPC2 : MonoBehaviour
 
         if (vip.touchedGround == true && !string.IsNullOrEmpty(randomMovementAreaName))
         {
-            GameObject randomMovementArea = GameObject.Find(randomMovementAreaName);
-            NPC1Animations.SetBool("getup", true);
+            NPC1Animations.SetBool("isChase", true);
             NPC1Animations.SetBool("isSit", false);
-
-            if (randomMovementArea != null)
-            {
-                // Get the bounds of the BoxCollider
-                Vector3 minBounds = randomMovementArea.GetComponent<Collider>().bounds.min;
-                Vector3 maxBounds = randomMovementArea.GetComponent<Collider>().bounds.max;
-
-                PerformRandomMovementInArea(minBounds, maxBounds);
-            }
-            else
-            {
-                Debug.LogWarning("Random movement area not found.");
-            }
         }
 
 
@@ -115,14 +118,24 @@ public class NPC2 : MonoBehaviour
 
         if (ticket2 == true)
         {
-            gotoseat = true;
-            mayham = false;
-            NPC1Animations.SetBool("isWalk", true);
-            NPC1Animations.SetBool("isIdle", false);
-            NPC1Animations.SetBool("isHand", false);
+            if (walkback == false)
+            {
+                if (talk2once == false)
+                {
+                    MouthAnim.Play(Talk2);
+                    talk2once = true;
+                }
 
-            Dialogue3 = true;
+                StartCoroutine(saythankyou());
+                mayham = false;
+                NPC1Animations.SetBool("isWalk", false);
+                NPC1Animations.SetBool("isIdle", true);
+                NPC1Animations.SetBool("isHand", false);
 
+                Dialogue3 = true;
+
+                canRagdoll = false;
+            }
         }
 
         if (Dialogue3 == true)
@@ -142,34 +155,78 @@ public class NPC2 : MonoBehaviour
             targetObjectName = leavingdestination;
             NPC1Animations.SetBool("getup", true);
             NPC1Animations.SetBool("isSit", false);
+            navMeshAgent.speed = 0.4f;
         }
+
+        if (lookat)
+        {
+            transform.LookAt(Player.position);
+        }
+    }
+
+    IEnumerator saythankyou()
+    {
+        yield return new WaitForSeconds(13f);
+        gotoseat = true;
+        NPC1Animations.SetBool("isWalk", true);
+        NPC1Animations.SetBool("isIdle", false);
+        NPC1Animations.SetBool("isHand", false);
+        lookat = false;
+        walkback = true;
+    }
+
+    public void showticket()
+    {
+        
+
+        NPC1Animations.SetBool("isHand", true);
+
+        gotHit = true;
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Finish"))
         {
-            ticket.enabled = true;
-            transform.LookAt(Player.transform);
-            NPC1Animations.SetBool("isHand", true);
+
+            lookat = true;
+            ticket.SetActive(true);
+
+            if (gotHit == false)
+            {
+                Invoke("showticket", 4.0f);
+            }
+
+            if (gotHit == true)
+            {
+                NPC1Animations.SetBool("isHand", true);
+            }
+
             box1.enabled = true;
             if (Dialogue1 == false)
             {
                 firstDialogue.SetActive(true);
+                MouthAnim.Play(Talk1);
                 Dialogue1 = true;
             }
         }
 
         if (other.CompareTag("Hand"))
         {
-            ragdoll();
-            firstDialogue.SetActive(false);
-
-            foreach (var rigidbody in _ragdollRigidbodies)
+            if(canRagdoll == true)
             {
-                rigidbody.isKinematic = false;
+                ticket.SetActive(false);
+                ragdoll();
+                firstDialogue.SetActive(false);
+
+                foreach (var rigidbody in _ragdollRigidbodies)
+                {
+                    rigidbody.isKinematic = false;
+                }
+                box1.enabled = false;
+                
             }
-            box1.enabled = false;
+
 
         }
     }
@@ -179,6 +236,7 @@ public class NPC2 : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             NPC1Animations.SetBool("isHand", false);
+            lookat = false;
         }
     }
 
@@ -210,6 +268,7 @@ public class NPC2 : MonoBehaviour
                 NPC1Animations.SetBool("isSit", true);
                 NPC1Animations.SetBool("isWalk", false);
                 NPC1Animations.SetBool("isIdle", false);
+                NPC1Animations.SetBool("isChase", false);
                 childObject.transform.SetParent(parentObject.transform);
 
                 ThirdDialogue.SetActive(false);

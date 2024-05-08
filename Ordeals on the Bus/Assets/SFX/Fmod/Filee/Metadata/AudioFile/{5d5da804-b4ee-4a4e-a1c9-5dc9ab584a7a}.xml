@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5d5da804-b4ee-4a4e-a1c9-5dc9ab584a7a}">
+		<property name="assetPath">
+			<value>Crossing event/cartoon-scream-1-6835.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1232653061224489</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a02d7dd1-c437-4206-afae-3413b65ec53e}</destination>
+		</relationship>
+	</object>
+</objects>

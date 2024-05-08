@@ -9,6 +9,8 @@ public class CrossingTrigger : MonoBehaviour
     public List<GameObject> npc = new List<GameObject>();
     public int currentNPCIndex = 0;
     bool anyGotHit = false;
+    public GameObject SupervisorReaction;
+    public GameObject SupervisorReaction2;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class CrossingTrigger : MonoBehaviour
             if (obj.GetComponent<BananaCrossing>().GotHit)
             {
                 anyGotHit = true;
+                SupervisorReaction.SetActive(true);
+                SupervisorReaction2.SetActive(false);
                 break;
             }
         }

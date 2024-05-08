@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9b991051-603b-4d96-a501-cdef707fadf2}">
+		<property name="assetPath">
+			<value>Radio music/chill-lofi-160893.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>168.0457142857143</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a02d7dd1-c437-4206-afae-3413b65ec53e}</destination>
+		</relationship>
+	</object>
+</objects>

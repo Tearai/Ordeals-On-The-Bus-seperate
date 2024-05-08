@@ -12,17 +12,21 @@ public class npcmovement : MonoBehaviour
     [Header("Going to the driver speed")]
     public float dockingspeed = 5f;
     public string targetObjectName; // Change the target variable to string
-    public GameObject Player;
+    public Transform Player;
     public bool canDriveOff;
 
     [Header("Seats")]
-    public MeshRenderer ticket;
+    public GameObject ticket;
     public bool ticket1;
     public string[] Seats;
     public bool gotoseat;
     private string randomSeatName;
     public GameObject childObject;
     public GameObject parentObject;
+
+    [Header("Look at player")]
+    public bool lookat;
+    public float rotationSpeed = 1f;
 
     [Header("Mayham")]
     public bool mayham;
@@ -43,6 +47,7 @@ public class npcmovement : MonoBehaviour
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
     public BoxCollider box1;
+    public bool canRagdoll;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -50,12 +55,27 @@ public class npcmovement : MonoBehaviour
     public GameObject SecondDialogue;
     public GameObject ThirdDialogue;
     public bool Dialogue3;
+    public bool Dialogue4;
+    public GameObject FourthDialogue;
+
+    public GameObject SupervisorDialogue;
+    public GameObject SupervisorDialogue2;
+
+    [Header("Mouth")]
+    public Animator MouthAnim;
+    public GameObject Mouth;
+    public string Talk1;
+    public string Talk2;
+    public bool talk2once;
+    public string Talk3;
+    public bool talk3once;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = movementSpeed; // Set the initial speed 
         NPC1Animations = Animation.GetComponent<Animator>();
+
         hipBone = NPC1Animations.GetBoneTransform(HumanBodyBones.Hips);
         _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
 
@@ -63,6 +83,10 @@ public class npcmovement : MonoBehaviour
         {
             rigidbody.isKinematic = true;
         }
+
+        canRagdoll = true;
+
+        MouthAnim = Mouth.GetComponent<Animator>();
     }
 
     void Update()
@@ -70,29 +94,19 @@ public class npcmovement : MonoBehaviour
         if (vip.touchedGround == true)
         {
             navMeshAgent.isStopped = false;
-            
+
         }
 
         if (vip.touchedGround == true && !string.IsNullOrEmpty(randomMovementAreaName))
         {
-            GameObject randomMovementArea = GameObject.Find(randomMovementAreaName);
+            
 
-            NPC1Animations.SetBool("getup", true);
+            NPC1Animations.SetBool("isChase", true);
             NPC1Animations.SetBool("isSit", false);
 
-            if (randomMovementArea != null)
-            {
-                // Get the bounds of the BoxCollider
-                Vector3 minBounds = randomMovementArea.GetComponent<Collider>().bounds.min;
-                Vector3 maxBounds = randomMovementArea.GetComponent<Collider>().bounds.max;
-
-                PerformRandomMovementInArea(minBounds, maxBounds);
-            }
-            else
-            {
-                Debug.LogWarning("Random movement area not found.");
-            }
+            
         }
+
 
         if (vip.touchedGround == false && gotoseat == false)
         {
@@ -100,9 +114,9 @@ public class npcmovement : MonoBehaviour
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
 
-            if (navMeshAgent.remainingDistance < 0.01f)
+            if (navMeshAgent.remainingDistance < 0.1f)  
             {
-                
+
                 NPC1Animations.SetBool("isIdle", true);
                 NPC1Animations.SetBool("isWalk", false);
             }
@@ -117,15 +131,33 @@ public class npcmovement : MonoBehaviour
             NPC1Animations.SetBool("isWalk", true);
             NPC1Animations.SetBool("isIdle", false);
             NPC1Animations.SetBool("isHand", false);
+            lookat = false;
+            navMeshAgent.isStopped = false;
 
-            Dialogue3 = true;
+            if (talk3once == false)
+            {
+                MouthAnim.Play(Talk3);
+                talk3once = true;
+            }
+
 
         }
 
-        if(Dialogue3 == true)
+        if (Dialogue3 == true && ticket1 == false)
         {
             ThirdDialogue.SetActive(true);
             firstDialogue.SetActive(false);
+            SupervisorDialogue2.SetActive(true);
+            NPC1Animations.SetBool("isWalk", false);
+            NPC1Animations.SetBool("isIdle", true);
+            NPC1Animations.SetBool("isHand", false);
+            canRagdoll = false;
+            if (talk2once == false)
+            {
+                MouthAnim.Play(Talk2);
+                talk2once = true;
+            }
+
         }
 
         if (gotoseat == true && vip.touchedGround == false)
@@ -133,11 +165,16 @@ public class npcmovement : MonoBehaviour
             GoToRandomSeat();
         }
 
-        if(canleave == true)
+        if (canleave == true)
         {
             targetObjectName = leavingdestination;
             NPC1Animations.SetBool("getup", true);
             NPC1Animations.SetBool("isSit", false);
+        }
+
+        if (lookat)
+        {
+            transform.LookAt(Player.position);
         }
     }
 
@@ -145,30 +182,37 @@ public class npcmovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Finish"))
         {
-            ticket.enabled = true;
-            transform.LookAt(Player.transform);
+            ticket.SetActive(true);
             NPC1Animations.SetBool("isHand", true);
             box1.enabled = true;
+            lookat = true;
 
             //sound
             if (Dialogue1 == false)
             {
                 firstDialogue.SetActive(true);
                 Dialogue1 = true;
+                SupervisorDialogue.SetActive(true);
+                MouthAnim.Play(Talk1);
             }
-            
+
         }
 
         if (other.CompareTag("Hand"))
         {
-            ragdoll();
-            firstDialogue.SetActive(false);
-
-            foreach (var rigidbody in _ragdollRigidbodies)
+            if (canRagdoll == true)
             {
-                rigidbody.isKinematic = false;
+                ticket.SetActive(false);
+                ragdoll();
+                firstDialogue.SetActive(false);
+
+                foreach (var rigidbody in _ragdollRigidbodies)
+                {
+                    rigidbody.isKinematic = false;
+                }
+                box1.enabled = false;
+
             }
-            box1.enabled = false;
 
 
         }
@@ -179,6 +223,8 @@ public class npcmovement : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             NPC1Animations.SetBool("isHand", false);
+            lookat = false;
+
         }
     }
 
@@ -211,9 +257,11 @@ public class npcmovement : MonoBehaviour
                 NPC1Animations.SetBool("isWalk", false);
                 NPC1Animations.SetBool("isIdle", false);
                 NPC1Animations.SetBool("getup", false);
+                NPC1Animations.SetBool("isChase", false);
                 childObject.transform.SetParent(parentObject.transform);
                 ThirdDialogue.SetActive(false);
 
+                //FourthDialogue.SetActive(true);
 
                 // Optional: You can disable the NavMeshAgent once the NPC reaches the seat
                 //navMeshAgent.isStopped = true;
@@ -308,7 +356,7 @@ public class npcmovement : MonoBehaviour
     {
         //NPC1Animations.SetBool("isStand", true);
         NPC1Animations.Play(getup);
-        
+
 
         yield return new WaitForSeconds(5f);
 
@@ -322,13 +370,13 @@ public class npcmovement : MonoBehaviour
 
         hipBone.position = originalHipsPosition;
 
-        
+
         NPC1Animations.enabled = true;
 
         yield return new WaitForSeconds(2.5f);
 
         NPC1Animations.SetBool("isStand", false);
-        
+
 
 
         yield return new WaitForSeconds(2.5f);

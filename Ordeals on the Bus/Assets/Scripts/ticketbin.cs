@@ -11,52 +11,56 @@ public class ticketbin : MonoBehaviour
     public NPC4 npc4;
     public NPC5 npc5;
 
+    public GameObject TicketSFX;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Ticket1"))
+        if (other.gameObject.CompareTag("Ticket1"))
         {
-            npc.ticket1 = true;
-            Destroy(other.gameObject);
+
+            other.gameObject.SetActive(false);
+            StartCoroutine(soundSFX());
+            StartCoroutine(DialogueDelay());
 
         }
 
         if (other.gameObject.CompareTag("Ticket2"))
         {
             npc2.ticket2 = true;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
 
         }
 
         if (other.gameObject.CompareTag("Ticket3"))
         {
             npc3.ticket3 = true;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
 
         }
 
         if (other.gameObject.CompareTag("Ticket4"))
         {
             npc4.ticket4 = true;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
 
         }
 
         if (other.gameObject.CompareTag("Ticket5"))
         {
             npc5.ticket5 = true;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
 
         }
     }
@@ -64,5 +68,19 @@ public class ticketbin : MonoBehaviour
     public IEnumerator ItemDelay()
     {
         yield return new WaitForSeconds(0.1f);
+    }
+
+    IEnumerator soundSFX()
+    {
+        TicketSFX.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        TicketSFX.SetActive(false);
+        npc.Dialogue3 = true;
+    }
+
+    IEnumerator DialogueDelay()
+    {
+        yield return new WaitForSeconds(15f);
+        npc.ticket1 = true;
     }
 }

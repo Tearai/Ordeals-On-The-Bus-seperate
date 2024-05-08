@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ace5da10-87db-40fb-9ba7-5df4cd984163}">
+		<property name="assetPath">
+			<value>Hazmat banana/hazmat_hit.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1040000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a02d7dd1-c437-4206-afae-3413b65ec53e}</destination>
+		</relationship>
+	</object>
+</objects>

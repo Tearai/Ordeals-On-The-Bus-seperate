@@ -6,25 +6,27 @@ public class activatephone : MonoBehaviour
 {
     public GameObject screenON;
     public GameObject screenOff;
+    private bool canworknow;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Hand"))
+        if(canworknow)
         {
             screenOff.SetActive(false);
             screenON.SetActive(true);
+            canworknow = false;
         }
+    }   
+
+    public void phoneon()
+    {
+        canworknow = true;
     }
 }

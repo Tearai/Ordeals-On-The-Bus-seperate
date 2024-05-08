@@ -23,7 +23,7 @@ public class worldmove2 : MonoBehaviour
 
     // Variables for switching lanes
     public float[] lanes;
-    private int currentLaneIndex = 1;
+    public int currentLaneIndex = 1;
     public bool isSwitchingLane = false;
 
     // Variables for bus leaving
@@ -47,6 +47,9 @@ public class worldmove2 : MonoBehaviour
     public float newSpeed;
     public float sliderValue;
 
+    public XRKnob wheel;
+    public float wheelangle;
+
 
     void Start()
     {
@@ -58,6 +61,20 @@ public class worldmove2 : MonoBehaviour
 
     void Update()
     {
+        //Wheel value
+        wheelangle = wheel.value;
+
+        if (wheelangle == 1)
+        {
+            Left();
+        }
+
+        if (wheelangle == 0)
+        {
+
+            Right();
+        }
+
         // Adjust speed based on slider value
         sliderValue = slider.value; // Get slider value between 0 and 1
 

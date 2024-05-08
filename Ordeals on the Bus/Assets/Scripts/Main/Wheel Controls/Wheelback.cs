@@ -9,10 +9,13 @@ public class Wheelback : MonoBehaviour
     public bool CanMoveBack;
     public float transitionspeed = 1f;
 
+    public float wheelangle;
+    public GameObject blinkerSFX;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,6 +24,18 @@ public class Wheelback : MonoBehaviour
         if (CanMoveBack == true)
         {
             wheel.value = Mathf.Lerp(wheel.value, 0.5f, transitionspeed * Time.deltaTime);
+        }
+
+        wheelangle = wheel.value;
+
+        if (wheelangle == 1)
+        {
+            StartCoroutine(indicatorsfx());
+        }
+
+        if (wheelangle == 0)
+        {
+            StartCoroutine(indicatorsfx());
         }
     }
 
@@ -32,5 +47,13 @@ public class Wheelback : MonoBehaviour
     public void handsoff()
     {
         CanMoveBack = true;
+    }
+
+    IEnumerator indicatorsfx()
+    {
+        blinkerSFX.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        blinkerSFX.SetActive(false);
+
     }
 }

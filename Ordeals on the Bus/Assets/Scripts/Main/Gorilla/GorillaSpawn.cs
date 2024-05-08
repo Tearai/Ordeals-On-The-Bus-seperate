@@ -9,6 +9,7 @@ public class GorillaSpawn : MonoBehaviour
     public GameObject gorillaMesh;
     public GameObject VFX;
     public bool move;
+    public GameObject helmet;
 
     public float fallForce = 10.0f;
     public bool canDrop;
@@ -47,8 +48,9 @@ public class GorillaSpawn : MonoBehaviour
             gorillaRb.useGravity = true;
             gorillaRb.isKinematic = false;
             gorillaMesh.SetActive(true);
-            
-            
+            helmet.SetActive(true);
+
+
             move = true;
         }
     }

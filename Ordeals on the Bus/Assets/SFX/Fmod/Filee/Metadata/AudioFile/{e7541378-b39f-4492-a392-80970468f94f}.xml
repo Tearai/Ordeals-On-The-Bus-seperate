@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e7541378-b39f-4492-a392-80970468f94f}">
+		<property name="assetPath">
+			<value>Hazmat banana/short-gas-leak-98286.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.472</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a02d7dd1-c437-4206-afae-3413b65ec53e}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,5 +1,113 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9178694787888836319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Runner (Disguised)/Disguised dialogue 2
+  m_EditorClassIdentifier: 
+  Path: event:/Runner (Disguised)/Disguised dialogue 2
+  Guid:
+    Data1: -499785780
+    Data2: 1184508017
+    Data3: 933374111
+    Data4: 1501362799
+  Banks:
+  - {fileID: 8837795279978686018}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10752
+--- !u!114 &-9045718375943456802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hazmat suit/Gas leak
+  m_EditorClassIdentifier: 
+  Path: event:/Hazmat suit/Gas leak
+  Guid:
+    Data1: 2105133833
+    Data2: 1273145165
+    Data3: -621626452
+    Data4: 600704048
+  Banks:
+  - {fileID: 4497062815640126517}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1872
+--- !u!114 &-8953836223789571782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 1/Passenger 1 dialogue 4
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 1/Passenger 1 dialogue 4
+  Guid:
+    Data1: -85740888
+    Data2: 1283081232
+    Data3: 649653401
+    Data4: 1175465394
+  Banks:
+  - {fileID: -1207280998003165891}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 810
+--- !u!114 &-8880165342312726007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Clown banana/Clown thanks
+  m_EditorClassIdentifier: 
+  Path: event:/Clown banana/Clown thanks
+  Guid:
+    Data1: 1212498706
+    Data2: 1100496101
+    Data3: -1617196117
+    Data4: 203183150
+  Banks:
+  - {fileID: 3657497054185787869}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11592
 --- !u!114 &-8544768457217633090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,6 +127,221 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 4262592
+  Exists: 1
+--- !u!114 &-8473202058867100289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser finished prepare SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser finished prepare SFX
+  Guid:
+    Data1: -1584034710
+    Data2: 1255597110
+    Data3: -471841387
+    Data4: -2081963448
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1944
+--- !u!114 &-7986243826277994411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Runner Passenger 1.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Runner Passenger 1.bank
+  Name: Runner Passenger 1
+  StudioPath: bank:/Runner Passenger 1
+  lastModified: 638502531613434911
+  FileSizes:
+  - Name: Desktop
+    Value: 521056
+  Exists: 1
+--- !u!114 &-7723481541732873929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Final Dialogue.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Final Dialogue.bank
+  Name: Final Dialogue
+  StudioPath: bank:/Final Dialogue
+  lastModified: 638507060114036796
+  FileSizes:
+  - Name: Desktop
+    Value: 151680
+  Exists: 1
+--- !u!114 &-7637993215780808637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Runner (Disguised)/Disguised dialogue 1
+  m_EditorClassIdentifier: 
+  Path: event:/Runner (Disguised)/Disguised dialogue 1
+  Guid:
+    Data1: -1453053273
+    Data2: 1335516290
+    Data3: -979673959
+    Data4: 1079419035
+  Banks:
+  - {fileID: 8837795279978686018}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11760
+--- !u!114 &-7481727637366698827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Bus docking Dialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Bus docking Dialogue
+  Guid:
+    Data1: 1240193003
+    Data2: 1341661752
+    Data3: 1077357990
+    Data4: 1800366176
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7008
+--- !u!114 &-7450455344919702983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Wiper SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Wiper SFX.bank
+  Name: Wiper SFX
+  StudioPath: bank:/Wiper SFX
+  lastModified: 638506964848208036
+  FileSizes:
+  - Name: Desktop
+    Value: 22752
+  Exists: 1
+--- !u!114 &-7420166867867303677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General Grab SFX
+  m_EditorClassIdentifier: 
+  Path: event:/General Grab SFX
+  Guid:
+    Data1: 1862826918
+    Data2: 1242296177
+    Data3: 269614267
+    Data4: -314407010
+  Banks:
+  - {fileID: 9004854474642674256}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1032
+--- !u!114 &-7332784589407846638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ending/pay check notification
+  m_EditorClassIdentifier: 
+  Path: event:/Ending/pay check notification
+  Guid:
+    Data1: 65329706
+    Data2: 1292271563
+    Data3: -485122132
+    Data4: 2005057707
+  Banks:
+  - {fileID: -7723481541732873929}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1541
+--- !u!114 &-7017322023091935008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/House event.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/House event.bank
+  Name: House event
+  StudioPath: bank:/House event
+  lastModified: 638506946644604576
+  FileSizes:
+  - Name: Desktop
+    Value: 359744
   Exists: 1
 --- !u!114 &-6974550213845292481
 MonoBehaviour:
@@ -47,34 +370,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6946845832915909199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BusAI
-  m_EditorClassIdentifier: 
-  Path: event:/BusAI
-  Guid:
-    Data1: -954373483
-    Data2: 1214141666
-    Data3: 1396580746
-    Data4: -855554869
-  Banks:
-  - {fileID: 2700541493429642394}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -3579636383332447431}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 18019
 --- !u!114 &-6533842947371639994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,7 +396,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 20
-  Length: 2720
+  Length: 5264
 --- !u!114 &-6413264201645862251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +417,222 @@ MonoBehaviour:
   - Name: Desktop
     Value: 153408
   Exists: 1
+--- !u!114 &-6366370230641092333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Radio music/Radio 1
+  m_EditorClassIdentifier: 
+  Path: event:/Radio music/Radio 1
+  Guid:
+    Data1: 1539531664
+    Data2: 1313127041
+    Data3: 515508401
+    Data4: -2002594505
+  Banks:
+  - {fileID: -2813548435229553515}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 131000
+--- !u!114 &-6185929139694695328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/House event/Crash wall SFX
+  m_EditorClassIdentifier: 
+  Path: event:/House event/Crash wall SFX
+  Guid:
+    Data1: -2052004354
+    Data2: 1132480582
+    Data3: 683897757
+    Data4: -1867013358
+  Banks:
+  - {fileID: -7017322023091935008}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &-6183324611928392472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Smelly banana/smelly got hit
+  m_EditorClassIdentifier: 
+  Path: event:/Smelly banana/smelly got hit
+  Guid:
+    Data1: -44701179
+    Data2: 1192089890
+    Data3: 1406202542
+    Data4: 1024103385
+  Banks:
+  - {fileID: 6576831736878332102}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6624
+--- !u!114 &-5959455411949530923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Smelly banana/Getting Cured
+  m_EditorClassIdentifier: 
+  Path: event:/Smelly banana/Getting Cured
+  Guid:
+    Data1: 590314440
+    Data2: 1319075272
+    Data3: 120758431
+    Data4: -1461177694
+  Banks:
+  - {fileID: 6576831736878332102}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
+--- !u!114 &-5926226453421401497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser charging SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser charging SFX
+  Guid:
+    Data1: -732624559
+    Data2: 1332366373
+    Data3: 1014288547
+    Data4: 1707199563
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 25416
+--- !u!114 &-5702267999218650621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Clown banana/Clown hi
+  m_EditorClassIdentifier: 
+  Path: event:/Clown banana/Clown hi
+  Guid:
+    Data1: 757984315
+    Data2: 1266519364
+    Data3: 484939444
+    Data4: -1379240698
+  Banks:
+  - {fileID: 3657497054185787869}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5664
+--- !u!114 &-5257465961680783648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hazmat suit/Hazmat hi
+  m_EditorClassIdentifier: 
+  Path: event:/Hazmat suit/Hazmat hi
+  Guid:
+    Data1: 1937801514
+    Data2: 1150339546
+    Data3: 1218896785
+    Data4: -898153619
+  Banks:
+  - {fileID: 4497062815640126517}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8536
+--- !u!114 &-5248627016909046030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hazmat suit/Supervisor hazmat reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Hazmat suit/Supervisor hazmat reaction
+  Guid:
+    Data1: -1256581444
+    Data2: 1145836358
+    Data3: -751446107
+    Data4: -1933314217
+  Banks:
+  - {fileID: 4497062815640126517}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18760
 --- !u!114 &-5226735772566452484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +653,114 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7840
   Exists: 1
+--- !u!114 &-4778164105737329970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Auto Dock Explain
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Auto Dock Explain
+  Guid:
+    Data1: 1571241701
+    Data2: 1156013901
+    Data3: 869780364
+    Data4: 1338753582
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7008
+--- !u!114 &-4759005366554458351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Runner Dialogue 2
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Runner Dialogue 2
+  Guid:
+    Data1: -359062169
+    Data2: 1115617286
+    Data3: 30333828
+    Data4: 342746624
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4032
+--- !u!114 &-4677132112135774096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/House event/Supervisor crash house reaction
+  m_EditorClassIdentifier: 
+  Path: event:/House event/Supervisor crash house reaction
+  Guid:
+    Data1: -1451424776
+    Data2: 1102993163
+    Data3: 540237717
+    Data4: 1191106477
+  Banks:
+  - {fileID: -7017322023091935008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17584
+--- !u!114 &-4642096783971651505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Car Crashed Dialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Car Crashed Dialogue
+  Guid:
+    Data1: -21104568
+    Data2: 1243076874
+    Data3: 2067336877
+    Data4: -194845004
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11064
 --- !u!114 &-4453390150516811431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +788,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3698943975452977661
+--- !u!114 &-4161989922636201279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,23 +798,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Tutorial Dialogue
+  m_Name: event:/Bus Engine
   m_EditorClassIdentifier: 
-  Path: event:/Tutorial Dialogue
+  Path: event:/Bus Engine
   Guid:
-    Data1: 2090694106
-    Data2: 1205521027
-    Data3: -328612224
-    Data4: -853766680
+    Data1: -2033923850
+    Data2: 1253718720
+    Data3: -934889032
+    Data4: 648880802
   Banks:
-  - {fileID: -3587746582396802372}
-  IsStream: 1
+  - {fileID: -2813548435229553515}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 21600
+  Length: 0
+--- !u!114 &-3898128446879938056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Runner (Disguised)/Supervisor reaction to leaving
+  m_EditorClassIdentifier: 
+  Path: event:/Runner (Disguised)/Supervisor reaction to leaving
+  Guid:
+    Data1: 81109142
+    Data2: 1109082318
+    Data3: 1956733610
+    Data4: 468698337
+  Banks:
+  - {fileID: 8837795279978686018}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17712
 --- !u!114 &-3679760329407770255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,12 +884,12 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Supervisor Dialogue.bank
   Name: Supervisor Dialogue
   StudioPath: bank:/Supervisor Dialogue
-  lastModified: 638500181946526317
+  lastModified: 638507101160220962
   FileSizes:
   - Name: Desktop
-    Value: 211168
+    Value: 1639520
   Exists: 1
---- !u!114 &-3579636383332447431
+--- !u!114 &-3341602325433018670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,25 +898,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/BusAI/Parameter 2
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser arm
   m_EditorClassIdentifier: 
-  Name: Parameter 2
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 3
-  ID:
-    data1: 1319936241
-    data2: 354406501
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Left
-  - Right
-  - Docking
-  - Main
-  Exists: 1
+  Path: event:/Laser and Gorilla Event/Laser arm
+  Guid:
+    Data1: 740681980
+    Data2: 1145397906
+    Data3: 1284673943
+    Data4: 779315972
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48768
+--- !u!114 &-3223581235839885512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Smelly banana/smelly thanks
+  m_EditorClassIdentifier: 
+  Path: event:/Smelly banana/smelly thanks
+  Guid:
+    Data1: -1808586603
+    Data2: 1131712215
+    Data3: -760562762
+    Data4: 1204572417
+  Banks:
+  - {fileID: 6576831736878332102}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1704
 --- !u!114 &-2857524118293191574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +963,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1045984
   Exists: 1
---- !u!114 &-2577406822596550717
+--- !u!114 &-2835909491882871375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,23 +973,205 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Passenger 1 dialogue 1
+  m_Name: event:/Karen banana/Karen show ticket
   m_EditorClassIdentifier: 
-  Path: event:/Passenger 1 dialogue 1
+  Path: event:/Karen banana/Karen show ticket
   Guid:
-    Data1: -1963271374
-    Data2: 1276149116
-    Data3: -2141973357
-    Data4: 363939538
+    Data1: -1336347184
+    Data2: 1088627401
+    Data3: 1999326880
+    Data4: 194220874
   Banks:
-  - {fileID: -1207280998003165891}
+  - {fileID: -1066670946368532702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4128
+--- !u!114 &-2813548435229553515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bus SFXs.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Bus SFXs.bank
+  Name: Bus SFXs
+  StudioPath: bank:/Bus SFXs
+  lastModified: 638507324100996534
+  FileSizes:
+  - Name: Desktop
+    Value: 12276544
+  Exists: 1
+--- !u!114 &-2769821372116261886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mafia event/Supervisor Reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Mafia event/Supervisor Reaction
+  Guid:
+    Data1: 1228837461
+    Data2: 1172768744
+    Data3: 394673568
+    Data4: -2104893613
+  Banks:
+  - {fileID: 7764878397045912248}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7328
+--- !u!114 &-2700615546110081471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 1/Passenger 1 dialogue 2
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 1/Passenger 1 dialogue 2
+  Guid:
+    Data1: 273846303
+    Data2: 1178646793
+    Data3: 2080510344
+    Data4: -73852681
+  Banks:
+  - {fileID: -1207280998003165891}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17418
+--- !u!114 &-2477350118014528544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hazmat suit/Hazmat hit
+  m_EditorClassIdentifier: 
+  Path: event:/Hazmat suit/Hazmat hit
+  Guid:
+    Data1: -416808816
+    Data2: 1253741048
+    Data3: -2009673041
+    Data4: 549141970
+  Banks:
+  - {fileID: 4497062815640126517}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 904
+--- !u!114 &-2166980553816603559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wiper SFX/Wipe right
+  m_EditorClassIdentifier: 
+  Path: event:/Wiper SFX/Wipe right
+  Guid:
+    Data1: -1108643526
+    Data2: 1256973999
+    Data3: -1827232596
+    Data4: 628173974
+  Banks:
+  - {fileID: -7450455344919702983}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-1675750074430813882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ticket SFX/Item respawn SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Ticket SFX/Item respawn SFX
+  Guid:
+    Data1: -1496809409
+    Data2: 1181085172
+    Data3: 1508684179
+    Data4: -1791206730
+  Banks:
+  - {fileID: 333891548347816743}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 626
+--- !u!114 &-1218762897019292897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Radio music/Radio 2
+  m_EditorClassIdentifier: 
+  Path: event:/Radio music/Radio 2
+  Guid:
+    Data1: -1557198000
+    Data2: 1295715618
+    Data3: -1936110462
+    Data4: 1304475066
+  Banks:
+  - {fileID: -2813548435229553515}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 134000
 --- !u!114 &-1207280998003165891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,11 +1187,112 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Passenger 1.bank
   Name: Passenger 1
   StudioPath: bank:/Passenger 1
-  lastModified: 638488627612164777
+  lastModified: 638506060381700349
   FileSizes:
   - Name: Desktop
-    Value: 7840
+    Value: 222656
   Exists: 1
+--- !u!114 &-1201523454508602731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Crashed Reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Crashed Reaction
+  Guid:
+    Data1: -1935762566
+    Data2: 1091307441
+    Data3: 565723807
+    Data4: -2106936212
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11600
+--- !u!114 &-1070524325828339134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hazmat suit/Hazmat thanks
+  m_EditorClassIdentifier: 
+  Path: event:/Hazmat suit/Hazmat thanks
+  Guid:
+    Data1: 1959915938
+    Data2: 1117948170
+    Data3: -239177306
+    Data4: -637054364
+  Banks:
+  - {fileID: 4497062815640126517}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6960
+--- !u!114 &-1066670946368532702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Karen banana.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Karen banana.bank
+  Name: Karen banana
+  StudioPath: bank:/Karen banana
+  lastModified: 638506883802391378
+  FileSizes:
+  - Name: Desktop
+    Value: 691616
+  Exists: 1
+--- !u!114 &-995492033027274614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ending/final dialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Ending/final dialogue
+  Guid:
+    Data1: 445814296
+    Data2: 1260805027
+    Data3: 1863476651
+    Data4: 554840731
+  Banks:
+  - {fileID: -7723481541732873929}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12672
 --- !u!114 &-732000826500496629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +1320,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60216
+--- !u!114 &-670086109050193280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Intro
+  m_EditorClassIdentifier: 
+  Path: event:/Intro
+  Guid:
+    Data1: 2068750624
+    Data2: 1146034735
+    Data3: 153416605
+    Data4: -1069480776
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32600
+--- !u!114 &-533654487997162180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser prepare SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser prepare SFX
+  Guid:
+    Data1: -1746057073
+    Data2: 1144687112
+    Data3: 2113158572
+    Data4: -1241268053
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11352
+--- !u!114 &-424130754707875204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Supervisor Reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Supervisor Reaction
+  Guid:
+    Data1: 991521832
+    Data2: 1162665714
+    Data3: -1824372557
+    Data4: -387810960
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16308
 --- !u!114 &-356770359895632236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +1428,80 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 100
   Length: 299232
+--- !u!114 &-246511180647774242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Laser event.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Laser event.bank
+  Name: Laser event
+  StudioPath: bank:/Laser event
+  lastModified: 638507375233224724
+  FileSizes:
+  - Name: Desktop
+    Value: 1648352
+  Exists: 1
+--- !u!114 &-206345205321033120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Supervisor Reaction 3 (got hit)
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Supervisor Reaction 3 (got hit)
+  Guid:
+    Data1: 445620369
+    Data2: 1249178087
+    Data3: -2138745723
+    Data4: -798635209
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15490
+--- !u!114 &-137195480436140699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Passenger 1 Reaction 2
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Passenger 1 Reaction 2
+  Guid:
+    Data1: -794278569
+    Data2: 1299111253
+    Data3: 297586348
+    Data4: 530883624
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,12 +1528,25 @@ MonoBehaviour:
   - {fileID: 870059850876793230}
   - {fileID: 7764878397045912248}
   - {fileID: -3587746582396802372}
+  - {fileID: -2813548435229553515}
+  - {fileID: -7986243826277994411}
+  - {fileID: 8837795279978686018}
+  - {fileID: 8826806257618323616}
+  - {fileID: 6576831736878332102}
+  - {fileID: 3657497054185787869}
+  - {fileID: -1066670946368532702}
+  - {fileID: -7017322023091935008}
+  - {fileID: 4497062815640126517}
+  - {fileID: -246511180647774242}
+  - {fileID: 7441712853875884951}
+  - {fileID: 333891548347816743}
+  - {fileID: 3374421315564106586}
+  - {fileID: -7450455344919702983}
+  - {fileID: -7723481541732873929}
   EditorEvents:
-  - {fileID: -6946845832915909199}
   - {fileID: 1762766685649486540}
   - {fileID: -6974550213845292481}
   - {fileID: 3203025809737642737}
-  - {fileID: -2577406822596550717}
   - {fileID: -732000826500496629}
   - {fileID: -3679760329407770255}
   - {fileID: -356770359895632236}
@@ -435,14 +1558,167 @@ MonoBehaviour:
   - {fileID: 6344842286443437168}
   - {fileID: -6533842947371639994}
   - {fileID: 9133915013446753375}
-  - {fileID: -3698943975452977661}
+  - {fileID: -4161989922636201279}
+  - {fileID: -2700615546110081471}
+  - {fileID: 2055781037910073559}
+  - {fileID: 5636725841719903840}
+  - {fileID: -8953836223789571782}
+  - {fileID: -4642096783971651505}
+  - {fileID: 2549367490975668629}
+  - {fileID: 3006403234000821021}
+  - {fileID: -7481727637366698827}
+  - {fileID: -137195480436140699}
+  - {fileID: 5449701721822027782}
+  - {fileID: 9006554716468636543}
+  - {fileID: -424130754707875204}
+  - {fileID: 7149067948136660047}
+  - {fileID: -4759005366554458351}
+  - {fileID: 2365859842975820612}
+  - {fileID: -206345205321033120}
+  - {fileID: -4778164105737329970}
+  - {fileID: -1201523454508602731}
+  - {fileID: -7637993215780808637}
+  - {fileID: 3825157432026298335}
+  - {fileID: 7185968427220542551}
+  - {fileID: 5769872823387940525}
+  - {fileID: 246491351687020869}
+  - {fileID: -9178694787888836319}
+  - {fileID: 2430327356944157234}
+  - {fileID: 3418850504858175677}
+  - {fileID: -6183324611928392472}
+  - {fileID: -5959455411949530923}
+  - {fileID: 8229968358253970560}
+  - {fileID: -3223581235839885512}
+  - {fileID: -5702267999218650621}
+  - {fileID: 3117678055827613419}
+  - {fileID: -8880165342312726007}
+  - {fileID: 7165136560234902705}
+  - {fileID: 8964272095333462439}
+  - {fileID: -2835909491882871375}
+  - {fileID: 6453178212403712390}
+  - {fileID: 4266821993123002646}
+  - {fileID: 4280469182403042177}
+  - {fileID: 8339070676319260454}
+  - {fileID: 4258668939590492202}
+  - {fileID: -2769821372116261886}
+  - {fileID: 8281173768271439713}
+  - {fileID: 7882746127627323878}
+  - {fileID: 8557229998329649988}
+  - {fileID: -4677132112135774096}
+  - {fileID: -3898128446879938056}
+  - {fileID: 5155039802485046479}
+  - {fileID: -5257465961680783648}
+  - {fileID: -1070524325828339134}
+  - {fileID: -5248627016909046030}
+  - {fileID: -2477350118014528544}
+  - {fileID: -9045718375943456802}
+  - {fileID: 3708968251838661550}
+  - {fileID: 2165335366847877880}
+  - {fileID: 1301461949142007219}
+  - {fileID: 4375760616861567027}
+  - {fileID: -1675750074430813882}
+  - {fileID: -6185929139694695328}
+  - {fileID: 946592437245055711}
+  - {fileID: -2166980553816603559}
+  - {fileID: 8437207779951503939}
+  - {fileID: 647597470364065132}
+  - {fileID: -533654487997162180}
+  - {fileID: -8473202058867100289}
+  - {fileID: -5926226453421401497}
+  - {fileID: 7764341404424391211}
+  - {fileID: 6982262508119178695}
+  - {fileID: -995492033027274614}
+  - {fileID: -7332784589407846638}
+  - {fileID: -670086109050193280}
+  - {fileID: 3530129000573778529}
+  - {fileID: 3349648882890821604}
+  - {fileID: 1155737791257509226}
+  - {fileID: -7420166867867303677}
+  - {fileID: 8285964364172750610}
+  - {fileID: -6366370230641092333}
+  - {fileID: -1218762897019292897}
+  - {fileID: -3341602325433018670}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2700541493429642394}
   StringsBanks:
   - {fileID: 3123715651733477682}
-  cacheTime: 638500181946526317
+  cacheTime: 638507375233224724
   cacheVersion: 131616
+--- !u!114 &246491351687020869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/T junction/left lane
+  m_EditorClassIdentifier: 
+  Path: event:/T junction/left lane
+  Guid:
+    Data1: 2034789190
+    Data2: 1326911454
+    Data3: 1525969299
+    Data4: -2085532930
+  Banks:
+  - {fileID: 8826806257618323616}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8210
+--- !u!114 &333891548347816743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Item SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Item SFX.bank
+  Name: Item SFX
+  StudioPath: bank:/Item SFX
+  lastModified: 638506942764917866
+  FileSizes:
+  - Name: Desktop
+    Value: 6464
+  Exists: 1
+--- !u!114 &647597470364065132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crossing event/Scream
+  m_EditorClassIdentifier: 
+  Path: event:/Crossing event/Scream
+  Guid:
+    Data1: -882171058
+    Data2: 1165836054
+    Data3: -1426408828
+    Data4: -1181297721
+  Banks:
+  - {fileID: 3374421315564106586}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1123
 --- !u!114 &870059850876793230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,11 +1734,92 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Banana Mafia Event.bank
   Name: Banana Mafia Event
   StudioPath: bank:/Banana Mafia Event
-  lastModified: 638495592057382480
+  lastModified: 638506029128352362
   FileSizes:
   - Name: Desktop
-    Value: 24192
+    Value: 50624
   Exists: 1
+--- !u!114 &946592437245055711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crossing event/Crashed into banana sfx
+  m_EditorClassIdentifier: 
+  Path: event:/Crossing event/Crashed into banana sfx
+  Guid:
+    Data1: 427353568
+    Data2: 1088999624
+    Data3: -1434464585
+    Data4: 2139618787
+  Banks:
+  - {fileID: 3374421315564106586}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 528
+--- !u!114 &1155737791257509226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cardboard box crash
+  m_EditorClassIdentifier: 
+  Path: event:/Cardboard box crash
+  Guid:
+    Data1: -122718631
+    Data2: 1306807684
+    Data3: -1546655857
+    Data4: -1259917823
+  Banks:
+  - {fileID: -2813548435229553515}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 480
+--- !u!114 &1301461949142007219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dock SFX/Dock End
+  m_EditorClassIdentifier: 
+  Path: event:/Dock SFX/Dock End
+  Guid:
+    Data1: -1634608235
+    Data2: 1075285746
+    Data3: -1461921113
+    Data4: 1489027555
+  Banks:
+  - {fileID: 7441712853875884951}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 926
 --- !u!114 &1612581398618206159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +1846,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 410
+  Length: 2832
 --- !u!114 &1762766685649486540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,6 +1901,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2055781037910073559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 1/Passenger 1 dialogue 1
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 1/Passenger 1 dialogue 1
+  Guid:
+    Data1: -1963271374
+    Data2: 1276149116
+    Data3: -2141973357
+    Data4: 363939538
+  Banks:
+  - {fileID: -1207280998003165891}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2200
+--- !u!114 &2165335366847877880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser charged
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser charged
+  Guid:
+    Data1: -1555461058
+    Data2: 1122809208
+    Data3: 399895472
+    Data4: 1770678576
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22200
 --- !u!114 &2324219444108415316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +1982,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7800
+--- !u!114 &2365859842975820612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Supervisor Reaction 2
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Supervisor Reaction 2
+  Guid:
+    Data1: -2108654487
+    Data2: 1195762156
+    Data3: 1918275517
+    Data4: 2128156847
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15990
+--- !u!114 &2430327356944157234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mafia event/mafia talk
+  m_EditorClassIdentifier: 
+  Path: event:/Mafia event/mafia talk
+  Guid:
+    Data1: -521985536
+    Data2: 1277048052
+    Data3: 583577754
+    Data4: -18362180
+  Banks:
+  - {fileID: 7764878397045912248}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20664
+--- !u!114 &2549367490975668629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Passenger 1 Reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Passenger 1 Reaction
+  Guid:
+    Data1: -631399322
+    Data2: 1267116077
+    Data3: -205844551
+    Data4: 39411318
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5554
 --- !u!114 &2700541493429642394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,11 +2078,65 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638500181943610986
+  lastModified: 638507375226524172
   FileSizes:
   - Name: Desktop
-    Value: 3322
+    Value: 1036
   Exists: 1
+--- !u!114 &3006403234000821021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Tutorial Dialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Tutorial Dialogue
+  Guid:
+    Data1: 2090694106
+    Data2: 1205521027
+    Data3: -328612224
+    Data4: -853766680
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 54504
+--- !u!114 &3117678055827613419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Clown banana/Clown got hit
+  m_EditorClassIdentifier: 
+  Path: event:/Clown banana/Clown got hit
+  Guid:
+    Data1: -1608539158
+    Data2: 1237503384
+    Data3: 926210239
+    Data4: 588138974
+  Banks:
+  - {fileID: 3657497054185787869}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1190
 --- !u!114 &3123715651733477682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,10 +2152,10 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638500181943621037
+  lastModified: 638507375226534195
   FileSizes:
   - Name: Desktop
-    Value: 2086
+    Value: 6658
   Exists: 1
 --- !u!114 &3203025809737642737
 MonoBehaviour:
@@ -638,6 +2184,309 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 100
   Length: 40724
+--- !u!114 &3349648882890821604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bus SFXs/collect ticket SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Bus SFXs/collect ticket SFX
+  Guid:
+    Data1: 886021357
+    Data2: 1138070385
+    Data3: 1784264370
+    Data4: -1948261073
+  Banks:
+  - {fileID: -2813548435229553515}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 410
+--- !u!114 &3374421315564106586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Crossing event.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Crossing event.bank
+  Name: Crossing event
+  StudioPath: bank:/Crossing event
+  lastModified: 638506970184136123
+  FileSizes:
+  - Name: Desktop
+    Value: 18112
+  Exists: 1
+--- !u!114 &3418850504858175677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Smelly banana/smelly hi
+  m_EditorClassIdentifier: 
+  Path: event:/Smelly banana/smelly hi
+  Guid:
+    Data1: 381858039
+    Data2: 1336683415
+    Data3: 2066298514
+    Data4: 78134030
+  Banks:
+  - {fileID: 6576831736878332102}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9648
+--- !u!114 &3530129000573778529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Intro acccepted
+  m_EditorClassIdentifier: 
+  Path: event:/Intro acccepted
+  Guid:
+    Data1: -195860605
+    Data2: 1090034206
+    Data3: 1191963539
+    Data4: -1741807072
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9560
+--- !u!114 &3657497054185787869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Clown banana.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Clown banana.bank
+  Name: Clown banana
+  StudioPath: bank:/Clown banana
+  lastModified: 638506963257196197
+  FileSizes:
+  - Name: Desktop
+    Value: 231552
+  Exists: 1
+--- !u!114 &3708968251838661550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser event
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser event
+  Guid:
+    Data1: 932488537
+    Data2: 1321079896
+    Data3: 1621432225
+    Data4: 1569405323
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23232
+--- !u!114 &3825157432026298335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Runner (Disguised)/Disguised dialogue (got hit)
+  m_EditorClassIdentifier: 
+  Path: event:/Runner (Disguised)/Disguised dialogue (got hit)
+  Guid:
+    Data1: 119315573
+    Data2: 1287228783
+    Data3: 741983397
+    Data4: 460896068
+  Banks:
+  - {fileID: 8837795279978686018}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 904
+--- !u!114 &4258668939590492202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Did not hit banana
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Did not hit banana
+  Guid:
+    Data1: 591023847
+    Data2: 1144349737
+    Data3: 618952378
+    Data4: -99094360
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7344
+--- !u!114 &4266821993123002646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Supervisor reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Supervisor reaction
+  Guid:
+    Data1: 2034930896
+    Data2: 1303196227
+    Data3: -1767518073
+    Data4: 2144035426
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34464
+--- !u!114 &4280469182403042177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Karen got hit
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Karen got hit
+  Guid:
+    Data1: -1908224527
+    Data2: 1252492420
+    Data3: 1473093769
+    Data4: -1470511363
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 720
+--- !u!114 &4375760616861567027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dock SFX/Dock start
+  m_EditorClassIdentifier: 
+  Path: event:/Dock SFX/Dock start
+  Guid:
+    Data1: -1382875921
+    Data2: 1281363521
+    Data3: 1755853213
+    Data4: 1077903112
+  Banks:
+  - {fileID: 7441712853875884951}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4960
+--- !u!114 &4497062815640126517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Hazmat banana.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Hazmat banana.bank
+  Name: Hazmat banana
+  StudioPath: bank:/Hazmat banana
+  lastModified: 638506932208856327
+  FileSizes:
+  - Name: Desktop
+    Value: 323104
+  Exists: 1
 --- !u!114 &4834629316411996660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,11 +2502,119 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Bus door SFX.bank
   Name: Bus door SFX
   StudioPath: bank:/Bus door SFX
-  lastModified: 638494245352983974
+  lastModified: 638507107135450953
   FileSizes:
   - Name: Desktop
-    Value: 56672
+    Value: 50272
   Exists: 1
+--- !u!114 &5155039802485046479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Supervisor ad reaction
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Supervisor ad reaction
+  Guid:
+    Data1: 1603559737
+    Data2: 1283848066
+    Data3: -1213877872
+    Data4: -28150607
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10296
+--- !u!114 &5449701721822027782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Supervisor Dialogue/Passenger 1 Reaction 3
+  m_EditorClassIdentifier: 
+  Path: event:/Supervisor Dialogue/Passenger 1 Reaction 3
+  Guid:
+    Data1: 598637351
+    Data2: 1133690640
+    Data3: 1386566583
+    Data4: 1576126486
+  Banks:
+  - {fileID: -3587746582396802372}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11948
+--- !u!114 &5636725841719903840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 1/Passenger 1 dialogue 3
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 1/Passenger 1 dialogue 3
+  Guid:
+    Data1: -1413776477
+    Data2: 1155806842
+    Data3: 1535577245
+    Data4: 1749569689
+  Banks:
+  - {fileID: -1207280998003165891}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15072
+--- !u!114 &5769872823387940525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/T junction/right lane
+  m_EditorClassIdentifier: 
+  Path: event:/T junction/right lane
+  Guid:
+    Data1: 297671997
+    Data2: 1335322817
+    Data3: 177336470
+    Data4: -998739406
+  Banks:
+  - {fileID: 8826806257618323616}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7080
 --- !u!114 &6344842286443437168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +2641,54 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 700
+  Length: 1907
+--- !u!114 &6453178212403712390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Karen complain smell
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Karen complain smell
+  Guid:
+    Data1: -363543156
+    Data2: 1254425577
+    Data3: 668954015
+    Data4: -1669086775
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40000
+--- !u!114 &6576831736878332102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Smelly Banana.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Smelly Banana.bank
+  Name: Smelly Banana
+  StudioPath: bank:/Smelly Banana
+  lastModified: 638506134127699816
+  FileSizes:
+  - Name: Desktop
+    Value: 252864
+  Exists: 1
 --- !u!114 &6617225937642860549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +2716,161 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6982262508119178695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser and Gorilla Event/Laser shot
+  m_EditorClassIdentifier: 
+  Path: event:/Laser and Gorilla Event/Laser shot
+  Guid:
+    Data1: 1839451881
+    Data2: 1214276122
+    Data3: -333183090
+    Data4: 146753649
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &7149067948136660047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Runner Dialogue (Gor Hit)
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Runner Dialogue (Gor Hit)
+  Guid:
+    Data1: 2063527947
+    Data2: 1318456113
+    Data3: 1229528720
+    Data4: 2082398579
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8320
+--- !u!114 &7165136560234902705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Karen hi
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Karen hi
+  Guid:
+    Data1: 324730397
+    Data2: 1113683582
+    Data3: -1398584396
+    Data4: -799205922
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6840
+--- !u!114 &7185968427220542551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Runner (Disguised)/Supervisor reaction to mustache
+  m_EditorClassIdentifier: 
+  Path: event:/Runner (Disguised)/Supervisor reaction to mustache
+  Guid:
+    Data1: 788543012
+    Data2: 1285919544
+    Data3: 275273867
+    Data4: -1985059587
+  Banks:
+  - {fileID: 8837795279978686018}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23980
+--- !u!114 &7441712853875884951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dock SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Dock SFX.bank
+  Name: Dock SFX
+  StudioPath: bank:/Dock SFX
+  lastModified: 638507306271693544
+  FileSizes:
+  - Name: Desktop
+    Value: 11392
+  Exists: 1
+--- !u!114 &7764341404424391211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gorilla Land
+  m_EditorClassIdentifier: 
+  Path: event:/Gorilla Land
+  Guid:
+    Data1: -2066729938
+    Data2: 1145078651
+    Data3: -1593105024
+    Data4: -1186964840
+  Banks:
+  - {fileID: -246511180647774242}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2977
 --- !u!114 &7764878397045912248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,10 +2886,239 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Mafia Event.bank
   Name: Mafia Event
   StudioPath: bank:/Mafia Event
-  lastModified: 638495596726324422
+  lastModified: 638506826621661390
   FileSizes:
   - Name: Desktop
-    Value: 186272
+    Value: 482272
+  Exists: 1
+--- !u!114 &7882746127627323878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/House event/Help me
+  m_EditorClassIdentifier: 
+  Path: event:/House event/Help me
+  Guid:
+    Data1: -140231733
+    Data2: 1148170871
+    Data3: 1282864268
+    Data4: -1917785958
+  Banks:
+  - {fileID: -7017322023091935008}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3096
+--- !u!114 &8229968358253970560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Smelly banana/Getting Rotten
+  m_EditorClassIdentifier: 
+  Path: event:/Smelly banana/Getting Rotten
+  Guid:
+    Data1: 2118664880
+    Data2: 1322042236
+    Data3: 1133062845
+    Data4: -1935048321
+  Banks:
+  - {fileID: 6576831736878332102}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
+--- !u!114 &8281173768271439713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/House event/Off Road
+  m_EditorClassIdentifier: 
+  Path: event:/House event/Off Road
+  Guid:
+    Data1: 1578944314
+    Data2: 1126725205
+    Data3: -1876962145
+    Data4: -240418875
+  Banks:
+  - {fileID: -7017322023091935008}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12192
+--- !u!114 &8285964364172750610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bus SFXs/Indicator
+  m_EditorClassIdentifier: 
+  Path: event:/Bus SFXs/Indicator
+  Guid:
+    Data1: 2075348717
+    Data2: 1243466011
+    Data3: -2018821476
+    Data4: 846329578
+  Banks:
+  - {fileID: -2813548435229553515}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2800
+--- !u!114 &8339070676319260454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Karen flinch
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Karen flinch
+  Guid:
+    Data1: -1936500172
+    Data2: 1157943940
+    Data3: 1403669667
+    Data4: 403625313
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &8437207779951503939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wiper SFX/Wipe left
+  m_EditorClassIdentifier: 
+  Path: event:/Wiper SFX/Wipe left
+  Guid:
+    Data1: 1498144580
+    Data2: 1083109689
+    Data3: -1916889953
+    Data4: 329302745
+  Banks:
+  - {fileID: -7450455344919702983}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2016
+--- !u!114 &8557229998329649988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/House event/Oh no my house
+  m_EditorClassIdentifier: 
+  Path: event:/House event/Oh no my house
+  Guid:
+    Data1: -382286394
+    Data2: 1209167414
+    Data3: 456315784
+    Data4: -19425047
+  Banks:
+  - {fileID: -7017322023091935008}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2184
+--- !u!114 &8826806257618323616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/T junction.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/T junction.bank
+  Name: T junction
+  StudioPath: bank:/T junction
+  lastModified: 638506816692772832
+  FileSizes:
+  - Name: Desktop
+    Value: 172576
+  Exists: 1
+--- !u!114 &8837795279978686018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Runner Disguised.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/SFX/Fmod/Filee/Build/Desktop/Runner Disguised.bank
+  Name: Runner Disguised
+  StudioPath: bank:/Runner Disguised
+  lastModified: 638506862377841911
+  FileSizes:
+  - Name: Desktop
+    Value: 405472
   Exists: 1
 --- !u!114 &8914909151291644343
 MonoBehaviour:
@@ -747,11 +3135,38 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Car SFXs.bank
   Name: Car SFXs
   StudioPath: bank:/Car SFXs
-  lastModified: 638495292665286482
+  lastModified: 638500765669544561
   FileSizes:
   - Name: Desktop
     Value: 648576
   Exists: 1
+--- !u!114 &8964272095333462439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Karen banana/Karen start
+  m_EditorClassIdentifier: 
+  Path: event:/Karen banana/Karen start
+  Guid:
+    Data1: 631706522
+    Data2: 1116061895
+    Data3: 59395257
+    Data4: 1344150158
+  Banks:
+  - {fileID: -1066670946368532702}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3400
 --- !u!114 &9004854474642674256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,11 +3182,38 @@ MonoBehaviour:
   Path: Assets/SFX/Fmod/Filee/Build/Desktop/Grab SFXs.bank
   Name: Grab SFXs
   StudioPath: bank:/Grab SFXs
-  lastModified: 638491623504146855
+  lastModified: 638507171711629500
   FileSizes:
   - Name: Desktop
-    Value: 7328
+    Value: 9856
   Exists: 1
+--- !u!114 &9006554716468636543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Passenger 2 (Runner)/Runner Dialogue 1
+  m_EditorClassIdentifier: 
+  Path: event:/Passenger 2 (Runner)/Runner Dialogue 1
+  Guid:
+    Data1: 1951817573
+    Data2: 1189442892
+    Data3: -1769496672
+    Data4: 947149171
+  Banks:
+  - {fileID: -7986243826277994411}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9600
 --- !u!114 &9133915013446753375
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,16 +19,12 @@ public class Ticketchilding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ticketisoff == true)
+        if(ticketisoff)
         {
             Ticket.transform.parent = null;
-            ticketRigidbody.isKinematic = true;
-        }
-
-        if (ticketisoff == false)
-        {
-            ticketRigidbody.isKinematic = true;
-        }
+            ticketRigidbody.isKinematic = false;
+            ticketRigidbody.useGravity = true;
+        }    
     }
 
     public void ticketoff()

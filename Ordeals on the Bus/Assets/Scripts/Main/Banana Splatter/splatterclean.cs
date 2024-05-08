@@ -22,6 +22,9 @@ public class splatterclean : MonoBehaviour
     public string wipeAnimation2;
     public bool playonce;
 
+    public GameObject wiperight;
+    public GameObject wiperleft;
+
 
     public bool[] boolArray = new bool[5];
 
@@ -100,6 +103,8 @@ public class splatterclean : MonoBehaviour
             if(playonce == true)
             {
                 wiperAnimator.SetBool("isSwipe", true);
+                wiperight.SetActive(true);
+                wiperleft.SetActive(false);
             }
         }
 
@@ -107,6 +112,8 @@ public class splatterclean : MonoBehaviour
         {
             //wiperAnimator.Play(wipeAnimation2);
             wiperAnimator.SetBool("isSwipe", false);
+            wiperight.SetActive(false);
+            wiperleft.SetActive(true);
         }
     }
 

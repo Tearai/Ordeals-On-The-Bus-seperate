@@ -11,6 +11,7 @@ public class rotateFix : MonoBehaviour
     public float value;
 
     public float tolerance = 0.01f;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +26,6 @@ public class rotateFix : MonoBehaviour
                 go = false; // Set go to false
                 map.transform.rotation = Quaternion.Euler(map.transform.rotation.eulerAngles.x, 180f, map.transform.rotation.eulerAngles.z);
             }
-        }
+        }       
     }
 }

@@ -481,14 +481,29 @@ MonoBehaviour:
   - Ambience
   - Banana Mafia Event
   - Bus door SFX
+  - Bus SFXs
   - Car SFXs
+  - Clown banana
+  - Crossing event
+  - Dock SFX
+  - Final Dialogue
   - Gorilla SFXs
   - Grab SFXs
+  - Hazmat banana
+  - House event
+  - Item SFX
+  - Karen banana
+  - Laser event
   - Mafia Event
   - Passenger 1
   - Phone SFX
   - Pop up Ads
+  - Runner Disguised
+  - Runner Passenger 1
+  - Smelly Banana
   - Supervisor Dialogue
+  - T junction
+  - Wiper SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

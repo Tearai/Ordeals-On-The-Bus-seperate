@@ -31,9 +31,17 @@ public class Gorilla : MonoBehaviour
     [Header("Animations")]
     public Animator gorillaAnimator;
 
+    [Header("Ragdoll")]
+    private Transform hipBone;
+    public GameObject Bones;
+    public Rigidbody[] _ragdollRigidbodies;
+    public bool canRagdoll;
+    public float hitForce = 50f;
+
     [Header("Death")]
     public gorillaland land;
     public GameObject landCheck;
+    public GameObject playerfacecheck;
 
     [Header("SFX")]
     public GameObject breakBusSFX;
@@ -44,8 +52,20 @@ public class Gorilla : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        
+
         gorillaAnimator = gameObject.GetComponent<Animator>();
+
+        hipBone = gorillaAnimator.GetBoneTransform(HumanBodyBones.Hips);
+        _ragdollRigidbodies = Bones.GetComponentsInChildren<Rigidbody>();
+
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
+
+        canRagdoll = true;
+
+        Bones.SetActive(true);
     }
 
     // Update is called once per frame
@@ -159,5 +179,16 @@ public class Gorilla : MonoBehaviour
     {
         Destroy(landCheck);
         land.touchedGround = false;
+        playerfacecheck.SetActive(false);
+
+        gorillaAnimator.enabled = false;
+
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = false;
+            // Apply force to ragdoll parts to simulate being hit
+            rigidbody.AddForce(Vector3.up * hitForce, ForceMode.Impulse);
+            rigidbody.AddForce(-transform.forward * hitForce, ForceMode.Impulse);
+        }
     }
 }

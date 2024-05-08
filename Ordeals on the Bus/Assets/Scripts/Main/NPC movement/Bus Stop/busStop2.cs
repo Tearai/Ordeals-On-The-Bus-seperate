@@ -27,7 +27,7 @@ public class busStop2 : MonoBehaviour
     void Start()
     {
         busdoorAnim = busdoor.GetComponent<Animator>();
-        
+
     }
 
     void Update()
@@ -53,9 +53,7 @@ public class busStop2 : MonoBehaviour
     {
         if (npc1.ticket2 == true)
         {
-            currentNPCIndex = 1;
-            npc[currentNPCIndex].GetComponent<NPC3>().enabled = true;
-            npc[currentNPCIndex].GetComponent<NavMeshAgent>().enabled = true;
+            StartCoroutine(waitfornextpassenger());
         }
 
     }
@@ -68,5 +66,13 @@ public class busStop2 : MonoBehaviour
         npc[currentNPCIndex].GetComponent<NPC2>().enabled = true;
         npc[currentNPCIndex].GetComponent<NavMeshAgent>().enabled = true;
 
+    }
+
+    IEnumerator waitfornextpassenger()
+    {
+        yield return new WaitForSeconds(10f);
+        currentNPCIndex = 1;
+        npc[currentNPCIndex].GetComponent<NPC3>().enabled = true;
+        npc[currentNPCIndex].GetComponent<NavMeshAgent>().enabled = true;
     }
 }

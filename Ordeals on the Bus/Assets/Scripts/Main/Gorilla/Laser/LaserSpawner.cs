@@ -16,22 +16,35 @@ public class LaserSpawner : MonoBehaviour
     public bool OneTime;
     public GameObject LaserButton;
 
+    [Header("Cannon Animation")]
+    public GameObject cannon;
+    public Animator cannonanim;
+
     [Header("Cow")]
     public GameObject Cow;
     public Transform ProjectileLocation;
     public float launchForce;
 
+    [Header("Monitor")]
+    public GameObject laserarm;
+    public Animator laserarmanim;
+
     [Header("VFX Timing")]
     public RedHollowControl vfx;
     public float VFXTime;
     public bool switchState;
+    public GameObject shotSFX;
 
     // Start is called before the first frame update
     void Start()
     {
         LaserVFXAnimator = LaserVFX.GetComponent<Animator>();
+
+        laserarmanim = laserarm.GetComponent<Animator>();
+
+        cannonanim = cannon.GetComponent<Animator>();
     }
-        
+
     // Update is called once per frame
     void Update()
     {
@@ -41,16 +54,21 @@ public class LaserSpawner : MonoBehaviour
             OneTime = true;
         }
 
-        if(OneTime == true && switchState == false)
+        if (OneTime == true && switchState == false)
         {
             switchState = true;
             vfx.Burst_Beam();
             StartCoroutine(LaserVFXTiming());
         }
 
-        if(WaitTimeOver == true)
+        if (WaitTimeOver == true)
         {
             LaserButton.SetActive(true);
+        }
+
+        if(CanShoot)
+        {
+            shotSFX.SetActive(true);
         }
     }
 
@@ -60,17 +78,21 @@ public class LaserSpawner : MonoBehaviour
         {
             CanSpawnLaser = true;
             StartCoroutine(SpawnLaser());
+            laserarmanim.SetBool("isShow", true);
         }
     }
 
     IEnumerator SpawnLaser()
     {
-        Laser.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        cannonanim.SetBool("isShow", true);
         yield return new WaitForSeconds(ChargeTimer);
         LaserVFXAnimator.enabled = true;
         yield return new WaitForSeconds(TimerToShoot);
         WaitTimeOver = true;
-        
+        yield return new WaitForSeconds(30f);
+        CanShoot = true;
+
     }
 
     IEnumerator LaserVFXTiming()
@@ -91,5 +113,6 @@ public class LaserSpawner : MonoBehaviour
     public void ButtonShoot()
     {
         CanShoot = true;
+        
     }
 }

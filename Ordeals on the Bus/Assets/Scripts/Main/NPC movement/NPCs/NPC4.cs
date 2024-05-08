@@ -15,16 +15,20 @@ public class NPC4 : MonoBehaviour
     public NPC3 smelly;
     public bool showticket;
     public bool canShow;
-    public GameObject Player;
+    public Transform Player;
 
     [Header("Seats")]
-    public MeshRenderer ticket;
+    public GameObject ticket;
     public bool ticket4;
     public string[] Seats;
     public bool gotoseat;
     private string randomSeatName;
     public GameObject childObject;
     public GameObject parentObject;
+
+    [Header("Look at player")]
+    public bool lookat;
+    public float rotationSpeed = 1f;
 
     [Header("Mayham")]
     public bool mayham;
@@ -46,6 +50,7 @@ public class NPC4 : MonoBehaviour
     public GameObject Bones;
     public Rigidbody[] _ragdollRigidbodies;
     public BoxCollider box1;
+    public bool canRagdoll;
 
     [Header("Dialogue")]
     public GameObject firstDialogue;
@@ -59,6 +64,27 @@ public class NPC4 : MonoBehaviour
     public bool Dialogue5;
     public GameObject SixthDialogue;
     public GameObject SeventhDialogue;
+    public GameObject MustacheDialogue;
+    public bool isSit;
+    public bool isFlinching;
+    public bool canComplain;
+    public GameObject Supervisorreaction;
+    public bool gorillaLanded;
+    public GameObject supervisorAD;
+
+    [Header("Spawn gun")]
+    public GameObject gun;
+    public adtrigger ads;
+    public Transform spawnPoint;
+
+    [Header("Mouth")]
+    public Animator MouthAnim;
+    public GameObject Mouth;
+    public string Talk1;
+    public string Talk2;
+    public bool talk2once;
+    public string Talk3;
+    public bool talk3once;
 
     void Start()
     {
@@ -74,7 +100,13 @@ public class NPC4 : MonoBehaviour
         {
             rigidbody.isKinematic = true;
         }
+        canRagdoll = true;
 
+        MustacheDialogue.SetActive(true);
+
+        MouthAnim = Mouth.GetComponent<Animator>();
+
+        MouthAnim.Play(Talk1);
     }
 
     void Update()
@@ -82,6 +114,8 @@ public class NPC4 : MonoBehaviour
         if (vip.touchedGround == true)
         {
             navMeshAgent.isStopped = false;
+            gorillaLanded = true;
+            FourthDialogue.SetActive(false);
         }
 
 
@@ -89,8 +123,9 @@ public class NPC4 : MonoBehaviour
         {
             GameObject randomMovementArea = GameObject.Find(randomMovementAreaName);
 
-            NPC1Animations.SetBool("getup", true);
+            NPC1Animations.SetBool("isChase", true);
             NPC1Animations.SetBool("isSit", false);
+
 
             if (randomMovementArea != null)
             {
@@ -131,11 +166,14 @@ public class NPC4 : MonoBehaviour
             NPC1Animations.SetBool("isIdle", false);
             NPC1Animations.SetBool("isHand", false);
             Dialogue3 = true;
+            lookat = false;
+            canRagdoll = false;
+            isSit = true;
         }
 
         if (Dialogue3 == true)
         {
-            ThirdDialogue.SetActive(true);
+            //ThirdDialogue.SetActive(true);
             firstDialogue.SetActive(false);
         }
 
@@ -155,37 +193,44 @@ public class NPC4 : MonoBehaviour
         //showing ticket
         showticket = smelly.canGeton;
 
-        if (canShow == true && showticket == true && ticket4 == false)
+        if (canShow == true && showticket == true && ticket4 == false && isSit == false)
         {
-            ticket.enabled = true;
+            ticket.SetActive(true);
             NPC1Animations.SetBool("isHand", true);
             firstDialogue.SetActive(false);
             FifthDialogue.SetActive(true);
             SixthDialogue.SetActive(false);
+            Supervisorreaction.SetActive(false);
             Dialogue5 = true;
+            MouthAnim.Play(Talk3);
         }
         else
         {
-            ticket.enabled = false;
+            ticket.SetActive(false);
             NPC1Animations.SetBool("isHand", false);
             FifthDialogue.SetActive(false);
         }
 
-        if(canShow == true && showticket == false && Dialogue5 == true)
+        if (canShow == true && showticket == false && Dialogue5 == true)
         {
             SixthDialogue.SetActive(true);
             Dialogue5 = false;
         }
 
 
-        if (Dialogue4 == true && showticket == true)
+        if (canComplain == true && showticket == true && gorillaLanded == false)
+        {
+            FourthDialogue.SetActive(false);
+        }
+
+        if (canComplain == true && showticket == false && gorillaLanded == false)
         {
             FourthDialogue.SetActive(true);
         }
 
-        if (Dialogue4 == true && showticket == false)
+        if (lookat)
         {
-            FourthDialogue.SetActive(false);
+            transform.LookAt(Player.position);
         }
 
     }
@@ -194,27 +239,36 @@ public class NPC4 : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            transform.LookAt(Player.transform);
+            lookat = true;
             canShow = true;
 
             if (Dialogue1 == false)
             {
                 firstDialogue.SetActive(true);
                 Dialogue1 = true;
+                MustacheDialogue.SetActive(false);
+                Supervisorreaction.SetActive(true);
+                MouthAnim.Play(Talk2);
+                StartCoroutine(spawngun());
             }
             box1.enabled = true;
         }
 
         if (other.CompareTag("Hand"))
         {
-            ragdoll();
-            firstDialogue.SetActive(false);
-
-            foreach (var rigidbody in _ragdollRigidbodies)
+            if (canRagdoll == true)
             {
-                rigidbody.isKinematic = false;
+                ticket.SetActive(false);
+                ragdoll();
+                firstDialogue.SetActive(false);
+
+                foreach (var rigidbody in _ragdollRigidbodies)
+                {
+                    rigidbody.isKinematic = false;
+                }
+                box1.enabled = false;
             }
-            box1.enabled = false;
+
         }
     }
 
@@ -223,6 +277,7 @@ public class NPC4 : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             canShow = false;
+            lookat = false;
         }
     }
 
@@ -254,9 +309,13 @@ public class NPC4 : MonoBehaviour
                 NPC1Animations.SetBool("isSit", true);
                 NPC1Animations.SetBool("isWalk", false);
                 NPC1Animations.SetBool("isIdle", false);
+                NPC1Animations.SetBool("isChase", false);
                 childObject.transform.SetParent(parentObject.transform);
+                FifthDialogue.SetActive(false);
+                isSit = true;
 
                 Dialogue4 = true;
+                canComplain = true;
                 ThirdDialogue.SetActive(false);
             }
         }
@@ -365,11 +424,37 @@ public class NPC4 : MonoBehaviour
         NPC1Animations.SetBool("isFlinch", true);
         SeventhDialogue.SetActive(true);
         firstDialogue.SetActive(false);
+
+        if (isFlinching == false)
+        {
+            StartCoroutine(flinchDialoguetimer());
+        }
+
     }
 
     public void noflinch()
     {
         NPC1Animations.SetBool("isFlinch", false);
+    }
+
+
+    IEnumerator flinchDialoguetimer()
+    {
+        isFlinching = true;
+        yield return new WaitForSeconds(3f);
+        SeventhDialogue.SetActive(false);
+        isFlinching = false;
+
+    }
+
+    IEnumerator spawngun()
+    {
+        yield return new WaitForSeconds(25f);
+        ads.spawnads();
+        yield return new WaitForSeconds(10f);
+        GameObject spawnedGun = Instantiate(gun, spawnPoint.position, spawnPoint.rotation);
+        yield return new WaitForSeconds(5f);
+        supervisorAD.SetActive(true);
     }
 
 }

@@ -4,70 +4,56 @@ using UnityEngine;
 
 public class DockSign : MonoBehaviour
 {
-    private Renderer rend;
-    public float fadeSpeed = 2f; // Speed at which the alpha changes
-    private bool fadingOut = false; // Flag to control fading out
+    public GameObject Sign;
+    public Animator SignAnim;
 
-    //new code
-    public GameObject sign;
+    public GameObject dockSFX;
+    public GameObject notdockSFX;
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        // Set the initial alpha value
-        Color color = rend.material.color;
-        color.a = 0f;
-        rend.material.color = color;
+        SignAnim = Sign.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Docking"))
         {
-            // Set alpha to 100%
-            //SetAlpha(1f);
-            sign.SetActive(true);
+            SignAnim.SetBool("isSign", true);
+            dockSFX.SetActive(true);
+            notdockSFX.SetActive(false);
         }
-    }
 
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Docking"))
+        if (other.CompareTag("Turn"))
         {
-            // Start fading out
-            //fadingOut = true;
-            sign.SetActive(false);
+            SignAnim.SetBool("isTurn", true);
+            dockSFX.SetActive(true);
+            notdockSFX.SetActive(false);
         }
-    }
 
-    void Update()
-    {
-        if (fadingOut)
+        if (other.CompareTag("Fast"))
         {
-            // Fade out the alpha value
-            FadeOut();
+            SignAnim.SetBool("isOver", true);
+            dockSFX.SetActive(true);
+            notdockSFX.SetActive(false);
         }
-    }
 
-    void FadeOut()
-    {
-        Color color = rend.material.color;
-        color.a -= fadeSpeed * Time.deltaTime;
-        // Ensure alpha doesn't go below 0
-        color.a = Mathf.Max(color.a, 0f);
-        rend.material.color = color;
-
-        // If alpha reaches 0, stop fading out
-        if (color.a <= 0f)
+        if (other.CompareTag("Stop"))
         {
-            fadingOut = false;
+            SignAnim.SetBool("isSign", false);
+            dockSFX.SetActive(false);
+            notdockSFX.SetActive(true);
         }
-    }
 
-    void SetAlpha(float alpha)
-    {
-        Color color = rend.material.color;
-        color.a = alpha;
-        rend.material.color = color;
+        if (other.CompareTag("Halt"))
+        {
+            SignAnim.SetBool("isTurn", false);
+            SignAnim.SetBool("isOver", false);
+            dockSFX.SetActive(false);
+            notdockSFX.SetActive(true);
+
+        }
+
+
     }
 }

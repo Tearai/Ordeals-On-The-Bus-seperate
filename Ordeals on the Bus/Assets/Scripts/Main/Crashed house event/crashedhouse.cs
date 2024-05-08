@@ -11,6 +11,8 @@ public class crashedhouse : MonoBehaviour
 
     public float waitTime = 5;
 
+    public GameObject middleUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +29,8 @@ public class crashedhouse : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(crashedEvent()); 
+            StartCoroutine(crashedEvent());
+            middleUI.SetActive(false);
         }
     }
 
